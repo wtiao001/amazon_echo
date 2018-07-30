@@ -1,0 +1,123 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+       <div class="intro">
+            <div class="echoimg">
+                   <img id="img" src="background-01.png">
+            </div>
+            <div class="bubble-wrap">
+                <div class="bubble">
+                </div> 
+                <div class="triangle"></div>
+                <div class="text">"Alexa, </div>
+                <div class="text2">what song is this?"</div>
+            </div>
+            <div class="circle-background">
+              <div class="circle"></div>
+              <div class="circle1"></div>
+              <div class="circle2"></div>
+              <div class="circle3"></div>
+              <div class="circle4"></div>
+              <div class="circle5"></div>  
+            </div>
+            <div class="meet-text">Alexa is here to help.</div>
+       </div>
+
+        <div class="next"></div>
+    </body>
+    <script>
+        $(document).ready(function(){
+        
+            
+        setTimeout(function(){
+            $('.circle').addClass('animated');
+        },2000);
+        setTimeout(function(){
+            $('.circle1').addClass('animated');
+        },8000);
+        setTimeout(function(){
+            $('.circle1').css({"opacity":"0"});
+        },8150);
+        setTimeout(function(){
+            $('.circle2').addClass('animated');
+        },8100);
+        setTimeout(function(){
+            $('.circle2').css({"opacity":"0"});
+        },8250);
+        setTimeout(function(){
+            $('.circle3').addClass('animated');
+        },8200);
+        setTimeout(function(){
+            $('.circle3').css({"opacity":"0"});
+        },8350);
+//        setTimeout(function(){
+//            $('.circle4').addClass('animated');
+//        },1300);
+//        setTimeout(function(){
+//            $('.circle4').css({"opacity":"0"});
+//        },1450);
+//        setTimeout(function(){
+//            $('.circle5').addClass('animated');
+//        },1400);
+//        setTimeout(function(){
+//            $('.circle5').css({"opacity":"0"});
+//        },1550);
+        setTimeout(function(){
+            $('.bubble').addClass('animated');
+        },3000);
+//        setTimeout(function(){
+//            $('.triangle').css({"border-right":"40px solid transparent"});
+//        },2950);
+        setTimeout(function(){
+            $('.triangle').css({"border-top":"40px solid white"});
+        },2950);
+        setTimeout(function(){
+            $('.text').css({"opacity":"1"});
+        },3500);
+        setTimeout(function(){
+            $('.text2').css({"opacity":"1"});
+        },4000);
+            
+// bubble fade out
+        setTimeout(function(){
+            $('.bubble.animated').css({"opacity":"0"});
+        },8300);
+        setTimeout(function(){
+            $('.text').css({"opacity":"0"});
+        },8300);
+        setTimeout(function(){
+            $('.text2').css({"opacity":"0"});
+        },8300);
+        setTimeout(function(){
+            $('.triangle').css({"opacity":"0"});
+        },8300);
+        setTimeout(function(){
+            $('.meet-text').css({"opacity":"1"});
+        },10000);
+        setTimeout(function(){
+            $('.meet-text').css({"transform":"translateY(-10%)"});
+        },10000);
+        
+        
+        });
+        
+//  fade scroll script
+        $(function(){
+            var documentEl = $(document),
+                fadeElem = $('.intro');
+            documentEl.on('scroll',function(){
+                var currentscrollpos = documentEl.scrollTop();
+                
+                fadeElem.each(function(){
+                    var $this = $(this),
+                        elemOffsetTop = $this.offset().top;
+                    if (currentscrollpos > elemOffsetTop) $this.css('opacity',1-(currentscrollpos-elemOffsetTop)/400);
+                });
+            }); 
+        });
+    </script>
+</html>
