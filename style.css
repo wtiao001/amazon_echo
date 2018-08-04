@@ -3,7 +3,17 @@ body {
     padding: 0;
     background: #efece9;
 }
-
+#intro-gif {
+    position: absolute;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    top: -5%;
+    z-index: 10000;
+    opacity: 1;
+    transition: all .5s ease;
+}
 
 .circle {
     padding: 0;
@@ -12,10 +22,10 @@ body {
     width: 100vw;
     height: 100vw;
     border-radius: 50%;
-    background: #1b86ce;
+    background: white;
     opacity: 1;
     transform:scale(2,2);
-    transition: transform 1.5s ease, opacity 3s ease, background 3s ease;
+    transition: transform 1.5s ease, opacity 2s ease, background 3s ease, border-radius .5s ease;
     z-index: 1000;
 }
 .circle.animated {
@@ -33,6 +43,9 @@ body {
 
 .echoimg {
     position: absolute;
+    background-image: url(images/background-01.png);
+    background-size: cover;
+    background-position: center;
     height: 100%;
     width: 100%;
     padding: 0;
@@ -42,8 +55,9 @@ body {
 #img {
     width: 100vw;
     max-width: 100%;
-    max-height: 100%;
+    position: absolute;
     z-index: 1;
+    bottom: 0;
 }
 
 
@@ -52,7 +66,7 @@ body {
     margin: 0;
     padding: 0;
     position: absolute;
-    width: 500px;
+    width: 1000px;
     height: 140px;
     top: 20%;
     left: 10%;
@@ -63,9 +77,9 @@ body {
     margin: 0;
     padding: 0;
     width: 0;
-    height: 90px;
-    border-radius: 15px;
-    transition: all .5s ease;
+    height: 180px;
+    border-radius: 30px;
+    transition: all .6s ease;
     background: white;
     z-index: 100;
 }
@@ -73,9 +87,9 @@ body {
     position: absolute;
     margin: 0;
     padding: 0;
-    width: 500px;
-    height: 90px;
-    border-radius: 15px;
+    width: 760px;
+    height: 180px;
+    border-radius: 35px;
     background: white;
     z-index: 100;
     animation-name: bubble;
@@ -87,24 +101,24 @@ body {
 .text {
     position: relative;
     display: inline-block;
-    top: 20px;
-    left: 30px;
     font-family: "Bookerly";
-    font-size: 35px;
+    font-size: 55px;
+    left: 50px;
+    top: 50px;    
     color: dimgrey;
-    transition: all 1s ease;
+    transition: all 1.5s ease;
     opacity: 0;
     z-index: 101;
 }
 .text2 {
     position: relative;
     display: inline-block;
-    top: 20px;
-    left: 30px;
     font-family: "Bookerly";
-    font-size: 35px;
+    font-size: 55px;
+    left: 50px;
+    top: 50px; 
     color: dimgrey;
-    transition: all 1s ease;
+    transition: all 1.5s ease;
     opacity: 0;
     z-index: 101;
 }
@@ -127,9 +141,9 @@ body {
 	width: 0;
 	height: 0;
 	border-top: 0px solid white;
-	border-right: 40px solid transparent;
-    left: 40px;
-    top: 89px;
+	border-right: 80px solid transparent;
+    left: 60px;
+    top: 170px;
     transition: all 0.5s ease;
     z-index: 10;
 }
@@ -138,7 +152,7 @@ body {
     margin: 0;
     padding: 0;
     position: absolute;
-    width: 550px;
+    width: 900px;
     height: 140px;
     top: 10%;
     left: 50%;
@@ -147,10 +161,9 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-    width: 580px;
-    transform:scaleX(0);
-    height: 90px;
-    border-radius: 15px;
+    width: 0;
+    height: 180px;
+    border-radius: 30px;
     transition: all .5s ease;
     background: white;
     z-index: 100;
@@ -159,26 +172,24 @@ body {
     position: absolute;
     margin: 0;
     padding: 0;
-/*    width: 580px;*/
-    transform:scaleX(1);
-    transform-origin: x-axis ;
-    height: 90px;
-    border-radius: 15px;
+    border-radius: 35px;
     background: white;
     z-index: 100;
+    width: 900px;
+    height: 180px;
     animation-name: bubble;
     animation-duration: .5s;
     animation-delay: .4s;
     animation-iteration-count: 1;
-    transform-origin: left;
+    transform-origin: center;
 }
 .text21 {
     position: relative;
     display: inline-block;
-    top: 20px;
-    left: 30px;
+    top: 50px;
+    left: 50px;
     font-family: "Bookerly";
-    font-size: 35px;
+    font-size: 55px;
     color: dimgrey;
     transition: all 1s ease;
     opacity: 0;
@@ -187,10 +198,10 @@ body {
 .text22 {
     position: relative;
     display: inline-block;
-    top: 20px;
-    left: 30px;
+    top: 50px;
+    left: 50px;
     font-family: "Bookerly";
-    font-size: 35px;
+    font-size: 55px;
     color: dimgrey;
     transition: all 1s ease;
     opacity: 0;
@@ -201,9 +212,9 @@ body {
 	width: 0;
 	height: 0;
 	border-top: 0px solid white;
-	border-left: 40px solid transparent;
-    left: 510px;
-    top: 89px;
+	border-left: 80px solid transparent;
+    left: 710px;
+    top: 179px;
     transition: all 0.5s ease;
     z-index: 10;
 }
@@ -231,7 +242,7 @@ body {
     background: white;
     opacity: 1;
     transform:scale(0,0);
-    transition: transform 1.5s ease, opacity 2s ease;
+    transition: transform 1.5s ease, opacity .5s ease, color 1s ease;
 }
 .circle1.animated {
     padding: 0;
@@ -240,7 +251,7 @@ body {
     width: 100vw;
     height: 100vw;
     border-radius: 50%;
-    background: white;
+    background: #00CAFF;
     transform:scale(2,2);
 }
 
@@ -251,9 +262,9 @@ body {
     width: 100vw;
     height: 100vw;
     border-radius: 50%;
-    background: lightblue;
+    background: white;
     transform:scale(0,0);
-    transition: transform 2s ease, opacity 2s ease;
+    transition: transform 2s ease, opacity .5s ease, color 1s ease;
 }
 .circle2.animated {
     padding: 0;
@@ -262,7 +273,7 @@ body {
     width: 100vw;
     height: 100vw;
     border-radius: 50%;
-    background: lightblue;
+    background: #00CAFF;
     transform:scale(2,2);
 }
 .circle3 {
@@ -331,15 +342,32 @@ body {
 
 .meet-text {
     position: absolute;
-    left: 34%;
-    top: 36%;
+    top: 25%;
     z-index: 1000;
     font-family: 'Aaux Prolight';
-    font-size: 60px;
-    color: 1b86ce;
+    font-size: 70px;
+    color: dimgray;
     opacity: 0;
-    transition: all 2s ease;
+    transition: all 1.3s ease;
     transform:translateY(0);
+    width: 100vw;
+    text-align: center;
+    max-width: 100%;
+}
+
+.meet-text2 {
+    position: absolute;
+    top: 32%;
+    z-index: 1000;
+    font-family: 'Aaux Prolight';
+    font-size: 120px;
+    color: #00caff;
+    opacity: 0;
+    transition: all 1.3s ease;
+    transform:translateY(0);
+    width: 100vw;
+    text-align: center;
+    max-width: 100%;
 }
 
 
@@ -347,7 +375,278 @@ body {
 .next {
     position: relative;
     width: 100vw;
-    height: 200vh;
+    height: 100vh;
+    max-width: 100%; 
+    z-index: 99;
+}
+
+.page2 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     max-width: 100%;
+    z-index: 100;
+}
+
+.nav {
+    position: fixed;
+    display: block;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: black;
+    z-index: 101;
+}
+
+.button-wrap {
+    float: right;
+    margin-right: 100px;
+}
+
+
+.logo {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    background: white;
+    width: 100px;
+    height: 50px;
+}
+
+.products {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    height: 70px;
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    font-family: 'Aaux Prolight';
+    transition: all .3s ease;
+}
+.nav-line {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    top: 5px;
+    margin-left: 20px;
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    font-family: 'Aaux Prolight';
+    transition: all .5s ease;
+}
+.alexa {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin-left: 20px;
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    font-family: 'Aaux Prolight';
+    transition: all .3s ease;
+}
+
+.dropdown {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    max-width: 100%;
+    left: 0;
+    top: 70px;
+    background: #E8E7E7;
+    opacity: .95;
+    transition: height .5s ease;
+    text-align: center;
+}
+
+/* svg icons hover */
+
+a.svg1 {
+    content: url(/icons/Artboard%203.svg); 
+    position: relative; 
+    top: -100px; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    width: 260px;
+    height: 260px;
+}
+a.svg1:hover {
+    content: url(/icons/Artboard%2032.svg); 
+}
+a.svg1:hover ~ .icon-text-wrap > .icon-text-1 {
+    visibility: visible;
+}
+a.svg2 {
+    content: url(/icons/Artboard%204.svg); 
+    position: relative; 
+    top: -100px; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    width: 260px;
+    height: 260px;
+}
+a.svg2:hover ~ .icon-text-wrap > .icon-text-2 {
+    visibility: visible;
+}
+a.svg2:hover {
+    content: url(/icons/Artboard%2042.svg); 
+}
+a.svg3 {
+    content: url(/icons/Artboard%205.svg); 
+    position: relative; 
+    top: -100px; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    width: 260px;
+    height: 260px;
+}
+a.svg3:hover {
+    content: url(/icons/Artboard%2052.svg); 
+}
+a.svg3:hover ~ .icon-text-wrap > .icon-text-3 {
+    visibility: visible;
+}
+a.svg4 {
+    content: url(/icons/Artboard%206.svg); 
+    position: relative; 
+    top: -100px; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    width: 260px;
+    height: 260px;
+}
+a.svg4:hover {
+    content: url(/icons/Artboard%2062.svg); 
+}
+a.svg4:hover ~ .icon-text-wrap > .icon-text-4 {
+    visibility: visible;
+}
+/* svg icon text */
+.icon-text-wrap {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    text-align: center;
+    top: 250px;
+}
+
+.icon-text-1, .icon-text-2, .icon-text-3, .icon-text-4 {
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'Aaux Prolight';
+    color: #00caff;
+    margin-left: 125px;
+    margin-right: 115px;
+}
+.icon-text-1 {
+    margin-right: 70px;
+    visibility: hidden;
+}
+.icon-text-2 {
+    margin-right: 50px;
+    visibility: hidden;
+}
+.icon-text-3 {
+    margin-left: 160px;
+    margin-right: 130px;
+    visibility: hidden;
+}
+.icon-text-4 {
+    margin-left: 85px;
+    visibility: hidden;
+}
+
+.icon {
+    width: 260px;
+    height: 260px;
+    margin-left: 50px;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.dropdown a {
+    opacity: 0;
+    transition: all .6s ease;
+    visibility: hidden;
+}
+
+.page-1-img {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    background-image: url(images/dog.jpg);
+    background-position: 80% 50%;
+    background-size: cover;
+}
+
+.dog {
+    width: 100%;
+    height: 100%;
+    max-width: 100%:
+}
+
+.pg2-text-wrap {
+    position: absolute;
+    top: 250px;
+    left: 500px;    
+}
+.pg2-text1 {
+    position: relative;
+    display: inline-block;
+    font-family: 'Aaux Prolight';
+    font-size: 150px;
+    color: black;
+    font-weight: 300;
+}
+.pg2-text2 {
+    position: relative;
+    display: inline-block;
+    font-family: 'Aaux Prolight';
+    font-size: 150px;
+    color: #00caff;
+    font-weight: 300;
+    margin-left: 30px;
+}
+
+/* dropdown hover */
+
+.products:hover {
+    color: #00caff;
+}
+.products:hover + .dropdown {
+    height: 300px;
+}
+.products:hover +.dropdown a{
+    opacity: 1;
+    top: 0;
+    visibility: visible;
+}
+.dropdown:hover {
+    height: 300px;
     
 }
+.dropdown:hover a {
+    opacity: 1;
+    top: 0;
+    visibility: visible;
+}
+
+
+
+.alexa:hover {
+    color: #00caff;
+}
+
