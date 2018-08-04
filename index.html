@@ -33,43 +33,88 @@
               <div class="circle5"></div>   
             </div>
             <div class="meet-text">Introducing the 2nd generation</div>
-            <div class="meet-text2">echo</div>
+            <div class="smile-wrap">
+               <div class="meet-text2">echo</div>
+               <img id="smile" src="icons/smile-07.svg"/>
+            </div>
+            <a href="#dogggg" class="scroll-button">next</a>
+            
        </div>
 
         <div class="next"></div>
-        <div class="page2">
+        <div id="dogggg" class="page2">
                <div class="nav">
-                  <div class="logo"></div>
+                  <a href="#" class="logo">
+                      <img src="icons/Amazon_Echo_logo-01.svg" id="echo-logo">
+                  </a>
                   <div class="button-wrap">
-                       <a href="#" class="products">echo products</a>
+                       <a href="#" class="products">Echo products</a>
                        <div class="dropdown">
-                           <a href="#" class="svg1"></a>
-                           <a href="#" class="svg2"></a>
-                           <a href="#" class="svg3"></a>
-                           <a href="#" class="svg4"></a>
-
-                        
-                        <div class="icon-text-wrap">
-                           <div class="icon-text-1">echo</div>
-                           <div class="icon-text-2">dot</div>
-                           <div class="icon-text-3">plus</div>
-                           <div class="icon-text-4">show</div>
-                        </div>
-                           
-
-                           
-                           
+                           <div class="icon">
+                               <a href="#" class="svg1"></a>
+                               <div class="icon-text-1">echo</div>
+                           </div>
+                           <div class="icon2">
+                               <a href="#" class="svg2"></a>
+                               <div class="icon-text-2">dot</div>
+                           </div>
+                           <div class="icon3">
+                               <a href="#" class="svg3"></a>
+                               <div class="icon-text-3">plus</div>
+                           </div>
+                           <div class="icon4">
+                               <a href="#" class="svg4"></a>
+                               <div class="icon-text-4">show</div>
+                           </div>     
                        </div>
                        <div class="nav-line">|</div>
-                       <a href="#" class="alexa">alexa overview</a> 
+                       <a href="#" class="alexa">Alexa overview</a> 
                   </div>
-                  
+                  <div class="hamburger">
+                    <div class="menu-button"></div>
+                  </div>
                </div>
                <div class="page-1-img">
                </div>
                <div class="pg2-text-wrap">
                    <div class="pg2-text1">Meet the all new</div>
                    <div class="pg2-text2">echo</div>
+               </div>
+               <div class="page1-content">
+                  <div class="speaker-content">
+                          <div class="speaker-text-wrap">
+                           <div class="speaker-text-1">POWERED</div>
+                           <div class="speaker-text-2">BY</div>
+                           <img src="icons/2000px-Dolby_logo.svg.png" class="dolby">
+                       </div>
+                       <div class="speaker-info-wrap">
+                            <div class="speaker-info">
+                                The Amazon Echo delivers pure sound made possible by 
+                                Bose. Rediscover your favorite songs as you stream 
+                                music wirelessly. The Amazon Echo is compact and ready to go whenever you are. You are always on the move. Now your music can travel with you. 
+                           </div>
+                           <a href="#" class="learn-dolby">Learn more about Dolby speakers</a>     
+                       </div>
+                       <div class="speaker-bubble-wrap">
+                           <div class="speaker-bubble1"></div>
+                           <div class="speaker-bubble2"></div>
+                           <div class="speaker-bubble3"></div>
+                       </div>
+                       <div class="music-logos">
+                           <div class="logos-1">
+                               <img class="amazon_music" src="logos/Amazonmusiclogo.png">
+                               <img class="spotify" src="logos/Spotify_logo_with_text.svg.png">
+                               <img class="pandora" src="logos/Pandora_2016_logo.svg">
+                           </div>
+                           <div class="logos-2">
+                               <img class="audible" src="logos/audible.png">   <img class="sirius" src="logos/Sirius_XM_Radio_Logo.svg.png">    
+                           </div>
+                           
+                       </div>
+                  </div> 
+                  <div class="mic-content">
+                      
+                  </div>
                </div>
                
         </div>
@@ -178,6 +223,9 @@
         setTimeout(function(){
             $('.meet-text2').css({"transform":"translateY(-15%)"});
         },7000);
+        setTimeout(function(){
+            $('#smile').css({"opacity":"1"});
+        },7000);
         
         
         var gifSource = $('#intro-gif').attr('src');
@@ -198,6 +246,54 @@
                     if (currentscrollpos > elemOffsetTop) $this.css('opacity',1-(currentscrollpos-elemOffsetTop)/400);
                 });
             }); 
+        });
+//  hamburger script
+        $(document).ready(function(){
+            $('.hamburger').click(function(){
+                $('.menu-button').toggleClass('active');
+            }); 
+//            $('.hamburger').click(function(){
+//                $('.nav').toggleClass('active');
+//            }); 
+//            $('.hamburger').click(function(){
+//                $('.nav-wrapper').toggleClass('active');
+//            }); 
+        });
+// smooth scroll script
+        $('a[href*="#"]')
+         // Remove links that don't actually link to anything
+         .not('[href="#"]')
+         .not('[href="#0"]')
+         .click(function(event) {
+           // On-page links
+           if (
+             location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+             &&
+             location.hostname == this.hostname
+           ) {
+             // Figure out element to scroll to
+             var target = $(this.hash);
+             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+             // Does a scroll target exist?
+             if (target.length) {
+               // Only prevent default if animation is actually gonna happen
+               event.preventDefault();
+               $('html, body').animate({
+                 scrollTop: target.offset().top
+               }, 700, function() {
+                 // Callback after animation
+                 // Must change focus!
+                 var $target = $(target);
+                 $target.focus();
+                 if ($target.is(":focus")) { // Checking if the target was focused
+                   return false;
+                 } else {
+                   $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                   $target.focus(); // Set focus again
+                 };
+               });
+             }
+            }
         });
     </script>
 </html>
