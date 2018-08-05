@@ -5,7 +5,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
-       <div class="intro">
+       <div id="start" class="intro">
             <div class="echoimg">
             </div>
              <div class="bubble-wrap">
@@ -37,14 +37,12 @@
                <div class="meet-text2">echo</div>
                <img id="smile" src="icons/smile-07.svg"/>
             </div>
-            <a href="#dogggg" class="scroll-button">next</a>
-            
        </div>
-
+        <a href="#dog" class="scroll-button">next</a>
         <div class="next"></div>
-        <div id="dogggg" class="page2">
+        <div id="dog" class="page2">
                <div class="nav">
-                  <a href="#" class="logo">
+                  <a href="#start" class="logo">
                       <img src="icons/Amazon_Echo_logo-01.svg" id="echo-logo">
                   </a>
                   <div class="button-wrap">
@@ -113,7 +111,42 @@
                        </div>
                   </div> 
                   <div class="mic-content">
-                      
+                      <div class="mic-text-wrap">
+                           <div class="mic-text-1">FAR-FIELD</div>
+                           <div class="mic-text-2">VOICE RECOGNITION</div>
+                           <div class="mic-box"></div>
+                      </div>
+                      <div class="mic-info-wrap">
+                          <div class="mic-info">
+                            The seven built in microphones of the Amazon Echo ensure you are always in control from across the room. Beam forming technology allows your voice to be heard even as your favorite tunes are playing. 
+                          </div>
+                      </div>
+                      <div class="mic-bubble-wrap">
+                           <div class="speaker-bubble1"></div>
+                           <div class="speaker-bubble2"></div>
+                           <div class="speaker-bubble3"></div>
+                       </div>
+                  </div>
+                  <div class="echo-quote">“Always ready, connected, and fast”</div>
+                  <div class="handsfree-content">
+                      <div class="handsfree-img">
+                         <img id="handsfree" src="images/Charcoal_Echo_Living_Room.jpg"> 
+                      </div>
+                      <div class="handsfree-text-wrap">
+                       <div>
+                       </div>
+<!--
+                          <div class="handsfree-text1-wrap">
+                              <div class="handsfree-text1">HANDS-FREE</div>
+                              <div class="handsfree-text1">CALLING AND MESSAGING</div>
+                          </div>
+-->
+<!--
+                          <div class="handsfree-info">
+                              Juggling different priorities can be tough, so Amazon Echo is here to help! With hands free calling you can make calls while your hands are free to cook, clean, etc. Set up your profile and teach Alexa your voice. So next time you can just say “Alexa, Call Dad” and Alexa will connect you. Amazon Echo is your perfect companion to help with your next dinner party, summer BBQ, or other big events.
+                          </div>
+-->
+                      </div>
                   </div>
                </div>
                
@@ -124,7 +157,10 @@
         
         setTimeout(function(){
             $('#intro-gif').css({"opacity":"0"});
-        },1500);    
+        },1500);
+        setTimeout(function(){
+            $('#intro-gif').css({"display":"none"});
+        },1800); 
         setTimeout(function(){
             $('.circle').addClass('animated');
         },2000);
