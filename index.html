@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="animate.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     </head>
     <body>
         <img id="intro-gif" src="images/alexa_logo_white.gif" />
@@ -30,12 +30,12 @@
                            <div class="icon4">
                                <a href="#" class="svg4"></a>
                                <div class="icon-text-4">Show</div>
-                           </div>     
+                           </div>
                        </div>
                        <div class="nav-line">|</div>
-                       <a href="#" class="alexa"><span>Alexa Overview </span></a> 
+                       <a href="#" class="alexa"><span>Alexa Overview </span></a>
                   </div>
-                  
+
                   <!--  HAMBURGER STUFF -->
                   <div class="hamburger">
                     <div class="menu-button"></div>
@@ -59,10 +59,10 @@
                                 <div class="ham-icon4">
                                    <a href="#" class="ham-svg4"></a>
                                    <div class="icon-text-4">Show</div>
-                                </div>  
+                                </div>
                           </div>
                           <div class="ham-alexa"><span>Alexa Overview </span></div>
-                     </div> 
+                     </div>
 
                   </div>
                </div>
@@ -79,7 +79,7 @@
                    <div class="bounce-scroll-wrap">
                        <a href="#pg1" class="bounce-scroll"></a>
                    </div>
-                   
+
                </div>
                <div id="pg1" class="page1-content">
                   <div class="speaker-content">
@@ -90,37 +90,37 @@
                            </div>
                        <div class="speaker-info-wrap">
                             <div class="speaker-info">
-                                The Amazon Echo delivers pure sound made possible by 
-                                Bose. Rediscover your favorite songs as you stream 
-                                music wirelessly. The Amazon Echo is compact and ready to go whenever you are. You are always on the move. Now your music can travel with you. 
+                                The Amazon Echo delivers pure sound made possible by
+                                Bose. Rediscover your favorite songs as you stream
+                                music wirelessly. The Amazon Echo is compact and ready to go whenever you are. You are always on the move. Now your music can travel with you.
                            </div>
-                           <a href="#" class="learn-dolby">Learn more about Dolby speakers</a>     
+                           <a href="#" class="learn-dolby">Learn more about Dolby speakers</a>
                        </div>
                        <div class="speaker-bubble-wrap">
                            <div class="speaker-bubble1"></div>
                            <div class="speaker-bubble2"></div>
                            <div class="speaker-bubble3"></div>
                        </div>
-                       <div class="music-logos">
+                       <div class="music-logos hideme">
                            <div class="logos-1">
                                <img class="amazon_music" src="logos/Amazonmusiclogo.png">
                                <img class="spotify" src="logos/Spotify_logo_with_text.svg.png">
                                <img class="pandora" src="logos/Pandora_2016_logo.svg">
                            </div>
                            <div class="logos-2">
-                               <img class="audible" src="logos/audible.png">   <img class="sirius" src="logos/Sirius_XM_Radio_Logo.svg.png">  
+                               <img class="audible" src="logos/audible.png">   <img class="sirius" src="logos/Sirius_XM_Radio_Logo.svg.png">
                            </div>
                        </div>
-                  </div> 
+                  </div>
                   <div class="mic-content">
                       <div class="mic-text-wrap">
-                           <div class="mic-text-1 hideme">FAR-FIELD</div>
+                           <div class="mic-text-1">FAR-FIELD</div>
                            <div class="mic-text-2 hideme">VOICE RECOGNITION</div>
-                           <div class="mic-box hideme"></div>
+                           <div class="mic-box"></div>
                       </div>
                       <div class="mic-info-wrap">
                           <div class="mic-info">
-                            The seven built in microphones of the Amazon Echo ensure you are always in control from across the room. Beam forming technology allows your voice to be heard even as your favorite tunes are playing. 
+                            The seven built in microphones of the Amazon Echo ensure you are always in control from across the room. Beam forming technology allows your voice to be heard even as your favorite tunes are playing.
                           </div>
                       </div>
                       <div class="mic-bubble-wrap">
@@ -132,7 +132,7 @@
                   <div class="echo-quote">“Always ready, connected, and fast”</div>
                   <div class="handsfree-content">
                       <div class="handsfree-img">
-                         <img id="handsfree" src="images/Charcoal_Echo_Living_Room.jpg"> 
+                         <img id="handsfree" src="images/Charcoal_Echo_Living_Room.jpg">
                       </div>
                       <div class="handsfree-text-wrap">
                        <div>
@@ -144,7 +144,7 @@
                           <div class="handsfree-info">
                               Juggling different priorities can be tough, so Amazon Echo is here to help! With hands free calling you can make calls while your hands are free to cook, clean, etc. Set up your profile and teach Alexa your voice. So next time you can just say “Alexa, Call Dad” and Alexa will connect you. Amazon Echo is your perfect companion to help with your next dinner party, summer BBQ, or other big events.
                           </div>
-                          <a href="#" class="learn-hands">Learn more about hands free features</a> 
+                          <a href="#" class="learn-hands">Learn more about hands free features</a>
                       </div>
                   </div>
                   <div class="gradient"></div>
@@ -152,41 +152,41 @@
                       <div class="voice-background"></div>
                   </div>
                </div>
-               
+
         </div>
     </body>
     <script>
         $(document).ready(function(){
-        
+
         setTimeout(function(){
             $('#intro-gif').css({"opacity":"0"});
         },1500);
         setTimeout(function(){
             $('#intro-gif').css({"display":"none"});
-        },1800); 
-        
+        },1800);
+
         var gifSource = $('#intro-gif').attr('src');
-        $('#intro-gif').attr('src', "");    
+        $('#intro-gif').attr('src', "");
         $('#intro-gif').attr('src', gifSource+"?"+new Date().getTime());
         });
 // hamburger menu script
         $(document).ready(function(){
             $('.hamburger').click(function(){
                 $('.menu-button').toggleClass('active');
-            }); 
+            });
             $('.hamburger').click(function(){
                 $('.hamburger-nav').toggleClass('active');
-            }); 
+            });
             $('.hamburger').click(function(){
                 $('.ham-content').toggleClass('active');
-            }); 
+            });
         });
-        
+
 //  fade scroll script
 //        $(function(){
 //            var documentEl = $(document),
 //                fadeElem = $('.page-1-img');
-//            
+//
 //            documentEl.on('scroll',function(){
 //                var currentscrollpos = documentEl.scrollTop();
 //                fadeElem.each(function(){
@@ -194,10 +194,10 @@
 //                        elemOffsetTop = $this.offset().top;
 //                    if (currentscrollpos > elemOffsetTop) $this.css('opacity',1-(currentscrollpos-elemOffsetTop)/400);
 //                });
-//            }); 
+//            });
 //        });
 
-// animate on scroll script 
+// animate on scroll script
 //        $(function(){
 //            var $window = $(window), win_height_padded = $window.height() * 1.1, isTouch = Modernizr.touch;
 //            if (isTouch) {
@@ -226,7 +226,7 @@
 //                });
 //            }
 //        });
-        
+
 // smooth scroll script
         $('a[href*="#"]')
          // Remove links that don't actually link to anything
@@ -263,28 +263,30 @@
              }
             }
         });
-$(document).ready(function() {
-    
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('.hideme').each( function(i){
-            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                
-                $(this).animate({'opacity':'1'},500);    
-            }
-            
-        }); 
-    
-    });
-    
-});
+        $(document).ready(function() {
+
+            /* Every time the window is scrolled ... */
+            $(window).scroll( function(){
+
+                /* Check the location of each desired element */
+                $('.hideme').each( function(i){
+
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+                    console.log(bottom_of_object + " bottom of object ");
+                    console.log(bottom_of_window + " bottom of window");
+                    /* If the object is completely visible in the window, fade it it */
+                    if( bottom_of_window > bottom_of_object ){
+
+                        $(this).animate({'opacity':'1'},500);
+
+                    }
+
+                });
+
+            });
+
+        });
 
     </script>
 <!--
