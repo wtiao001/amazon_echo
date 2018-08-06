@@ -5,15 +5,21 @@ body {
     overflow-x: hidden;
 }
 #intro-gif {
-    position: absolute;
-    width: 100vw;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    top: -5%;
-    z-index: 10000;
-    opacity: 1;
-    transition: all .5s ease;
+  position: fixed;
+  width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  /* top: -5%; */
+  z-index: 10000;
+  opacity: 1;
+  height: 100vh;
+  transition: all .5s ease;
+  background-color: white;
+}
+#intro-gif img {
+  width: 100%;
+  position: fixed;
 }
 
 .scroll-button-wrap {
@@ -48,7 +54,7 @@ body {
     position: relative;
     width: 100vw;
     height: 100vh;
-    max-width: 100%; 
+    max-width: 100%;
     z-index: 99;
 }
 
@@ -157,7 +163,7 @@ body {
     transition: all .3s ease;
 }
 .menu-button:before,
-.menu-button:after 
+.menu-button:after
 {
     content:'';
     position: absolute;
@@ -204,28 +210,28 @@ body {
 /* svg icons hover */
 
 a.svg1 {
-    content: url(/icons/Artboard%203.svg); 
-    position: relative; 
-    top: -100px; 
-    right: 0; 
-    bottom: 0; 
+    content: url(/icons/Artboard%203.svg);
+    position: relative;
+    top: -100px;
+    right: 0;
+    bottom: 0;
     left: 0;
     width: 100px;
     height: 100px;
     display: block;
 }
 a.svg1:hover {
-    content: url(/icons/Artboard%2032.svg); 
+    content: url(/icons/Artboard%2032.svg);
 }
 a.svg1:hover + .icon-text-1 {
     visibility: visible;
 }
 a.svg2 {
-    content: url(/icons/Artboard%204.svg); 
-    position: relative; 
-    top: -100px; 
-    right: 0; 
-    bottom: 0; 
+    content: url(/icons/Artboard%204.svg);
+    position: relative;
+    top: -100px;
+    right: 0;
+    bottom: 0;
     left: 0;
     width: 100px;
     height: 100px;
@@ -235,36 +241,36 @@ a.svg2:hover + .icon-text-2 {
     visibility: visible;
 }
 a.svg2:hover {
-    content: url(/icons/Artboard%2042.svg); 
+    content: url(/icons/Artboard%2042.svg);
 }
 a.svg3 {
-    content: url(icons/Artboard%205.svg); 
-    position: relative; 
-    top: -100px; 
-    right: 0; 
-    bottom: 0; 
+    content: url(icons/Artboard%205.svg);
+    position: relative;
+    top: -100px;
+    right: 0;
+    bottom: 0;
     left: 0;
     width: 100px;
     height: 100px;
 }
 a.svg3:hover {
-    content: url(/icons/Artboard%2052.svg); 
+    content: url(/icons/Artboard%2052.svg);
 }
 a.svg3:hover + .icon-text-3 {
     visibility: visible;
 }
 a.svg4 {
-    content: url(/icons/Artboard%206.svg); 
-    position: relative; 
-    top: -100px; 
-    right: 0; 
-    bottom: 0; 
+    content: url(/icons/Artboard%206.svg);
+    position: relative;
+    top: -100px;
+    right: 0;
+    bottom: 0;
     left: 0;
     width: 100px;
     height: 100px;
 }
 a.svg4:hover {
-    content: url(/icons/Artboard%2062.svg); 
+    content: url(/icons/Artboard%2062.svg);
 }
 a.svg4:hover + .icon-text-4 {
     visibility: visible;
@@ -482,7 +488,7 @@ a.svg4:hover + .icon-text-4 {
 }
 .dropdown:hover {
     height: 130px;
-    
+
 }
 .dropdown:hover a {
     opacity: 1;
@@ -566,7 +572,7 @@ a.svg4:hover + .icon-text-4 {
     width: 250px;
     background: snow;
     border-radius: 10px;
-    margin: 25px;    
+    margin: 25px;
 }
 .speaker-bubble2 {
     position: relative;
@@ -684,7 +690,7 @@ a.svg4:hover + .icon-text-4 {
     font-size: 22.5px;
     text-align: center;
     width: 35vw;
-    top: 17vw; 
+    top: 17vw;
 }
 .mic-bubble-wrap {
     position: relative;
@@ -884,26 +890,26 @@ a.svg4:hover + .icon-text-4 {
 /* svg icons hover */
 
     a.ham-svg1 {
-        content: url(/icons/Artboard%203.svg); 
-        position: relative; 
-        right: 0; 
-        bottom: 0; 
+        content: url(/icons/Artboard%203.svg);
+        position: relative;
+        right: 0;
+        bottom: 0;
         left: 0;
         width: 100px;
         height: 100px;
         display: block;
     }
     a.ham-svg1:hover {
-        content: url(/icons/Artboard%2032.svg); 
+        content: url(/icons/Artboard%2032.svg);
     }
     a.ham-svg1:hover + .icon-text-1 {
         visibility: visible;
     }
     a.ham-svg2 {
-        content: url(/icons/Artboard%204.svg); 
-        position: relative; 
-        right: 0; 
-        bottom: 0; 
+        content: url(/icons/Artboard%204.svg);
+        position: relative;
+        right: 0;
+        bottom: 0;
         left: 0;
         width: 100px;
         height: 100px;
@@ -913,34 +919,34 @@ a.svg4:hover + .icon-text-4 {
         visibility: visible;
     }
     a.ham-svg2:hover {
-        content: url(/icons/Artboard%2042.svg); 
+        content: url(/icons/Artboard%2042.svg);
     }
     a.ham-svg3 {
-        content: url(icons/Artboard%205.svg); 
-        position: relative;  
-        right: 0; 
-        bottom: 0; 
+        content: url(icons/Artboard%205.svg);
+        position: relative;
+        right: 0;
+        bottom: 0;
         left: 0;
         width: 100px;
         height: 100px;
     }
     a.ham-svg3:hover {
-        content: url(/icons/Artboard%2052.svg); 
+        content: url(/icons/Artboard%2052.svg);
     }
     a.ham-svg3:hover + .icon-text-3 {
         visibility: visible;
     }
     a.ham-svg4 {
-        content: url(/icons/Artboard%206.svg); 
-        position: relative;  
-        right: 0; 
-        bottom: 0; 
+        content: url(/icons/Artboard%206.svg);
+        position: relative;
+        right: 0;
+        bottom: 0;
         left: 0;
         width: 100px;
         height: 100px;
     }
     a.ham-svg4:hover {
-        content: url(/icons/Artboard%2062.svg); 
+        content: url(/icons/Artboard%2062.svg);
     }
     a.ham-svg4:hover + .icon-text-4 {
         visibility: visible;
