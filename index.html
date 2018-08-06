@@ -2,89 +2,92 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="animate.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
-       <div id="start" class="intro">
-            <div class="echoimg">
-            </div>
-             <div class="bubble-wrap">
-                <div class="bubble">
-                    <div class="text">"Alexa, </div>
-                    <div class="text2">what song is this?"</div>
-                </div> 
-                <div class="triangle"></div>
-                
-            </div>
-            <div class="bubble-wrap2">
-                <div class="bubble2">
-                </div> 
-                <div class="triangle2"></div>
-                <div class="text21">"Alexa, </div>
-                <div class="text22">what's the weather like?"</div>
-            </div> 
-            <img id="intro-gif" src="images/alexa_logo_white.gif" />
-            <div class="circle-background">
-               <div class="circle"></div>
-              <div class="circle1"></div>
-              <div class="circle2"></div>
-              <div class="circle3"></div>
-              <div class="circle4"></div>
-              <div class="circle5"></div>   
-            </div>
-            <div class="meet-text">Introducing the 2nd generation</div>
-            <div class="smile-wrap">
-               <div class="meet-text2">echo</div>
-               <img id="smile" src="icons/smile-07.svg"/>
-            </div>
-       </div>
-        <a href="#dog" class="scroll-button">next</a>
-        <div class="next"></div>
+        <img id="intro-gif" src="images/alexa_logo_white.gif" />
         <div id="dog" class="page2">
                <div class="nav">
-                  <a href="#start" class="logo">
+                  <a href="#dog" class="logo">
                       <img src="icons/Amazon_Echo_logo-01.svg" id="echo-logo">
                   </a>
                   <div class="button-wrap">
-                       <a href="#" class="products">Echo products</a>
+                       <a class="products">Echo products</a>
                        <div class="dropdown">
                            <div class="icon">
                                <a href="#" class="svg1"></a>
-                               <div class="icon-text-1">echo</div>
+                               <div class="icon-text-1">Echo</div>
                            </div>
                            <div class="icon2">
                                <a href="#" class="svg2"></a>
-                               <div class="icon-text-2">dot</div>
+                               <div class="icon-text-2">Dot</div>
                            </div>
                            <div class="icon3">
                                <a href="#" class="svg3"></a>
-                               <div class="icon-text-3">plus</div>
+                               <div class="icon-text-3">Plus</div>
                            </div>
                            <div class="icon4">
                                <a href="#" class="svg4"></a>
-                               <div class="icon-text-4">show</div>
+                               <div class="icon-text-4">Show</div>
                            </div>     
                        </div>
                        <div class="nav-line">|</div>
-                       <a href="#" class="alexa">Alexa overview</a> 
+                       <a href="#" class="alexa"><span>Alexa Overview </span></a> 
                   </div>
+                  
+                  <!--  HAMBURGER STUFF -->
                   <div class="hamburger">
                     <div class="menu-button"></div>
+                  </div>
+                  <div class="hamburger-nav">
+                     <div class="ham-content">
+                          <div class="ham-products">Echo products</div>
+                          <div class="ham-icon-wrap">
+                                <div class="ham-icon">
+                                   <a href="#" class="ham-svg1"></a>
+                                   <div class="icon-text-1">Echo</div>
+                                </div>
+                                <div class="ham-icon2">
+                                   <a href="#" class="ham-svg2"></a>
+                                   <div class="icon-text-2">Dot</div>
+                                </div>
+                                <div class="ham-icon3">
+                                   <a href="#" class="ham-svg3"></a>
+                                   <div class="icon-text-3">Plus</div>
+                                </div>
+                                <div class="ham-icon4">
+                                   <a href="#" class="ham-svg4"></a>
+                                   <div class="icon-text-4">Show</div>
+                                </div>  
+                          </div>
+                          <div class="ham-alexa"><span>Alexa Overview </span></div>
+                     </div> 
+
                   </div>
                </div>
                <div class="page-1-img">
                </div>
                <div class="pg2-text-wrap">
                    <div class="pg2-text1">Meet the all new</div>
-                   <div class="pg2-text2">echo</div>
+                   <div class="pg2-text2">Echo</div>
                </div>
-               <div class="page1-content">
+               <div class="pg2-button">
+                   <a href="#" class="options"><span>See options</span></a>
+                   <div class="pg2-scroll-text2">or</div>
+                   <div class="pg2-scroll-text">Scroll to learn more</div>
+                   <div class="bounce-scroll-wrap">
+                       <a href="#pg1" class="bounce-scroll"></a>
+                   </div>
+                   
+               </div>
+               <div id="pg1" class="page1-content">
                   <div class="speaker-content">
                           <div class="speaker-text-wrap">
                            <div class="speaker-text-1">POWERED</div>
                            <div class="speaker-text-2">BY</div>
-                           <img src="icons/2000px-Dolby_logo.svg.png" class="dolby">
-                       </div>
+                           <img src="icons/2000px-Dolby_logo.svg.png" class="dolby hideme">
+                           </div>
                        <div class="speaker-info-wrap">
                             <div class="speaker-info">
                                 The Amazon Echo delivers pure sound made possible by 
@@ -105,16 +108,15 @@
                                <img class="pandora" src="logos/Pandora_2016_logo.svg">
                            </div>
                            <div class="logos-2">
-                               <img class="audible" src="logos/audible.png">   <img class="sirius" src="logos/Sirius_XM_Radio_Logo.svg.png">    
+                               <img class="audible" src="logos/audible.png">   <img class="sirius" src="logos/Sirius_XM_Radio_Logo.svg.png">  
                            </div>
-                           
                        </div>
                   </div> 
                   <div class="mic-content">
                       <div class="mic-text-wrap">
-                           <div class="mic-text-1">FAR-FIELD</div>
-                           <div class="mic-text-2">VOICE RECOGNITION</div>
-                           <div class="mic-box"></div>
+                           <div class="mic-text-1 hideme">FAR-FIELD</div>
+                           <div class="mic-text-2 hideme">VOICE RECOGNITION</div>
+                           <div class="mic-box hideme"></div>
                       </div>
                       <div class="mic-info-wrap">
                           <div class="mic-info">
@@ -135,18 +137,19 @@
                       <div class="handsfree-text-wrap">
                        <div>
                        </div>
-<!--
                           <div class="handsfree-text1-wrap">
                               <div class="handsfree-text1">HANDS-FREE</div>
                               <div class="handsfree-text1">CALLING AND MESSAGING</div>
                           </div>
--->
-<!--
                           <div class="handsfree-info">
                               Juggling different priorities can be tough, so Amazon Echo is here to help! With hands free calling you can make calls while your hands are free to cook, clean, etc. Set up your profile and teach Alexa your voice. So next time you can just say “Alexa, Call Dad” and Alexa will connect you. Amazon Echo is your perfect companion to help with your next dinner party, summer BBQ, or other big events.
                           </div>
--->
+                          <a href="#" class="learn-hands">Learn more about hands free features</a> 
                       </div>
+                  </div>
+                  <div class="gradient"></div>
+                  <div class="voice-content">
+                      <div class="voice-background"></div>
                   </div>
                </div>
                
@@ -161,140 +164,69 @@
         setTimeout(function(){
             $('#intro-gif').css({"display":"none"});
         },1800); 
-        setTimeout(function(){
-            $('.circle').addClass('animated');
-        },2000);
-        setTimeout(function(){
-            $('.circle1').addClass('animated');
-        },5500);
-        setTimeout(function(){
-            $('.circle1').css({"opacity":"0"});
-        },5650);
-        setTimeout(function(){
-            $('.circle2').addClass('animated');
-        },5600);
-        setTimeout(function(){
-            $('.circle2').css({"opacity":"0"});
-        },5750);
-//        setTimeout(function(){
-//            $('.circle3').addClass('animated');
-//        },5700);
-//        setTimeout(function(){
-//            $('.circle3').css({"opacity":"0"});
-//        },5850);
-//        setTimeout(function(){
-//            $('.circle4').addClass('animated');
-//        },1300);
-//        setTimeout(function(){
-//            $('.circle4').css({"opacity":"0"});
-//        },1450);
-//        setTimeout(function(){
-//            $('.circle5').addClass('animated');
-//        },1400);
-//        setTimeout(function(){
-//            $('.circle5').css({"opacity":"0"});
-//        },1550);
-        setTimeout(function(){
-            $('.bubble').addClass('animated');
-        },3000);
-        setTimeout(function(){
-            $('.triangle').css({"border-right":"80px solid transparent"});
-        },2950);
-        setTimeout(function(){
-            $('.triangle').css({"border-top":"80px solid white"});
-        },2950);
-        setTimeout(function(){
-            $('.text').css({"opacity":"1"});
-        },3500);
-        setTimeout(function(){
-            $('.text2').css({"opacity":"1"});
-        },4000);   
-        setTimeout(function(){
-            $('.bubble2').addClass('animated');
-        },4000);
-        setTimeout(function(){
-            $('.triangle2').css({"border-top":"80px solid white"});
-        },3950);
-        setTimeout(function(){
-            $('.text21').css({"opacity":"1"});
-        },4500);
-        setTimeout(function(){
-            $('.text22').css({"opacity":"1"});
-        },5000);
-            
-// bubble fade out
-        setTimeout(function(){
-            $('.bubble.animated').css({"opacity":"0"});
-        },5800);
-        setTimeout(function(){
-            $('.text').css({"opacity":"0"});
-        },5800);
-        setTimeout(function(){
-            $('.text2').css({"opacity":"0"});
-        },5800);
-        setTimeout(function(){
-            $('.triangle').css({"opacity":"0"});
-        },5800);
-        setTimeout(function(){
-            $('.bubble2.animated').css({"opacity":"0"});
-        },5800);
-        setTimeout(function(){
-            $('.text21').css({"opacity":"0"});
-        },5800);
-        setTimeout(function(){
-            $('.text22').css({"opacity":"0"});
-        },5800);
-        setTimeout(function(){
-            $('.triangle2').css({"opacity":"0"});
-        },5800);
-        setTimeout(function(){
-            $('.meet-text').css({"opacity":"1"});
-        },6000);
-        setTimeout(function(){
-            $('.meet-text').css({"transform":"translateY(-15%)"});
-        },6000);
-        setTimeout(function(){
-            $('.meet-text2').css({"opacity":"1"});
-        },7000);
-        setTimeout(function(){
-            $('.meet-text2').css({"transform":"translateY(-15%)"});
-        },7000);
-        setTimeout(function(){
-            $('#smile').css({"opacity":"1"});
-        },7000);
-        
         
         var gifSource = $('#intro-gif').attr('src');
         $('#intro-gif').attr('src', "");    
         $('#intro-gif').attr('src', gifSource+"?"+new Date().getTime());
         });
-        
-//  fade scroll script
-        $(function(){
-            var documentEl = $(document),
-                fadeElem = $('.intro');
-            
-            documentEl.on('scroll',function(){
-                var currentscrollpos = documentEl.scrollTop();
-                fadeElem.each(function(){
-                    var $this = $(this),
-                        elemOffsetTop = $this.offset().top;
-                    if (currentscrollpos > elemOffsetTop) $this.css('opacity',1-(currentscrollpos-elemOffsetTop)/400);
-                });
-            }); 
-        });
-//  hamburger script
+// hamburger menu script
         $(document).ready(function(){
             $('.hamburger').click(function(){
                 $('.menu-button').toggleClass('active');
             }); 
-//            $('.hamburger').click(function(){
-//                $('.nav').toggleClass('active');
-//            }); 
-//            $('.hamburger').click(function(){
-//                $('.nav-wrapper').toggleClass('active');
-//            }); 
+            $('.hamburger').click(function(){
+                $('.hamburger-nav').toggleClass('active');
+            }); 
+            $('.hamburger').click(function(){
+                $('.ham-content').toggleClass('active');
+            }); 
         });
+        
+//  fade scroll script
+//        $(function(){
+//            var documentEl = $(document),
+//                fadeElem = $('.page-1-img');
+//            
+//            documentEl.on('scroll',function(){
+//                var currentscrollpos = documentEl.scrollTop();
+//                fadeElem.each(function(){
+//                    var $this = $(this),
+//                        elemOffsetTop = $this.offset().top;
+//                    if (currentscrollpos > elemOffsetTop) $this.css('opacity',1-(currentscrollpos-elemOffsetTop)/400);
+//                });
+//            }); 
+//        });
+
+// animate on scroll script 
+//        $(function(){
+//            var $window = $(window), win_height_padded = $window.height() * 1.1, isTouch = Modernizr.touch;
+//            if (isTouch) {
+//                $('.revealOnScroll').addClass('animated');
+//            }
+//            $window.on('scroll', revealOnScroll);
+//            function revealOnScroll(){
+//                var scrolled = $window.scrollTop(), win_height_padded = $window.height() * 1.1;
+//                $('.revealOnScroll:not(.animated)').each(function(){
+//                    var $this = $(this), offsetTop = $this.offset().top;
+//                    if (scrolled + win_height_padded > offsetTop) {
+//                        if ($this.data('timeout')) {
+//                            window.setTimeout(function (){
+//                                $this.addClass('animated' + $this.data('animation'));
+//                            }, parseInt($this.data('timeout'), 10));
+//                        } else {
+//                            $this.addClass('animated' + $this.data('animation'));
+//                        }
+//                    }
+//                });
+//                $('.revealOnScroll.animated').each(function(index){
+//                    var $this = $(this), offsetTop = $this.offset().top;
+//                    if (scrolled + win_height_padded < offsetTop) {
+//                        $(this).removeClass('animated fadeInUp flipInX lightSpeedIn');
+//                    }
+//                });
+//            }
+//        });
+        
 // smooth scroll script
         $('a[href*="#"]')
          // Remove links that don't actually link to anything
@@ -331,5 +263,39 @@
              }
             }
         });
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
     </script>
+<!--
+    <script src="viewportchecker.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.post').addClass("hidden").viewportChecker({
+                classToAdd: 'visible animated fadeIn',
+                offset: 100
+            });
+        });
+    </script>
+-->
 </html>

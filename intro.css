@@ -1,0 +1,426 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #efece9;
+    overflow-x: hidden;
+}
+.next {
+    position: relative;
+    overflow-y: hidden;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%; 
+    z-index: 99;
+}
+#intro-gif {
+    position: absolute;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    top: -5%;
+    z-index: 10000;
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.circle {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%;
+    background: white;
+    opacity: 1;
+    transform:scale(2,2);
+    transition: transform 1.5s ease, opacity 2s ease, background 3s ease, border-radius .5s ease;
+    z-index: 1000;
+}
+.circle.animated {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%;
+    background: white;
+    opacity: 0;
+    transform:scale(0,0);
+    z-index: 1000;
+}
+
+.echoimg {
+    position: absolute;
+    background-image: url(images/Artboard%207-100.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+#img {
+    width: 100vw;
+    max-width: 100%;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+
+
+
+.bubble-wrap {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 1000px;
+    height: 140px;
+    top: 20%;
+    left: 10%;
+}
+
+.bubble {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 180px;
+    border-radius: 30px;
+    transition: all .6s ease;
+    background: white;
+    z-index: 100;
+}
+.bubble.animated {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    height: 80px;
+    border-radius: 12px;
+    background: white;
+    z-index: 100;
+    animation-name: bubble;
+    animation-duration: .5s;
+    animation-delay: .4s;
+    animation-iteration-count: 1;
+    transform-origin: left;
+}
+.text {
+    position: relative;
+    display: inline-block;
+    font-family: "Bookerly";
+    font-size: 25px;
+    left: 25px;
+    top: 25px;    
+    color: dimgrey;
+    transition: all 1.5s ease;
+    opacity: 0;
+    z-index: 101;
+}
+.text2 {
+    position: relative;
+    display: inline-block;
+    font-family: "Bookerly";
+    font-size: 25px;
+    left: 25px;
+    top: 25px; 
+    color: dimgrey;
+    transition: all 1.5s ease;
+    opacity: 0;
+    z-index: 101;
+}
+@keyframes bubble {
+    0% {
+    transform:scale(1,1);
+    }
+    40% {
+    transform:scale(1.04,1.04);
+    }
+    60%{
+    transform:scale(1,1);
+    }
+    70% {
+    transform:scale(1.03,1.03);   
+    }
+}
+.triangle {
+    position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 0px solid white;
+	border-right: 40px solid transparent;
+    left: 30px;
+    top: 80px;
+    transition: all 0.5s ease;
+    z-index: 10;
+}
+
+.bubble-wrap2 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 900px;
+    height: 140px;
+    top: 10%;
+    left: 50%;
+}
+.bubble2 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 180px;
+    border-radius: 30px;
+    transition: all .5s ease;
+    background: white;
+    z-index: 100;
+}
+.bubble2.animated {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border-radius: 12px;
+    background: white;
+    z-index: 100;
+    width: 415px;
+    height: 80px;
+    animation-name: bubble;
+    animation-duration: .5s;
+    animation-delay: .4s;
+    animation-iteration-count: 1;
+    transform-origin: center;
+}
+.text21 {
+    position: relative;
+    display: inline-block;
+    top: 25px;
+    left: 25px;
+    font-family: "Bookerly";
+    font-size: 25px;
+    color: dimgrey;
+    transition: all 1s ease;
+    opacity: 0;
+    z-index: 101;
+}
+.text22 {
+    position: relative;
+    display: inline-block;
+    top: 25px;
+    left: 25px;
+    font-family: "Bookerly";
+    font-size: 25px;
+    color: dimgrey;
+    transition: all 1s ease;
+    opacity: 0;
+    z-index: 101;
+}
+.triangle2 {
+    position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 0px solid white;
+	border-left: 40px solid transparent;
+    left: 330px;
+    top: 80px;
+    transition: all 0.5s ease;
+    z-index: 10;
+}
+
+
+
+
+/* background circle animation */
+.circle-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    z-index: 100;
+}
+.circle1 {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%;
+    background: white;
+    opacity: 1;
+    transform:scale(0,0);
+    transition: transform 1.5s ease, opacity .5s ease, color 1s ease;
+}
+.circle1.animated {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%;
+    background: #00CAFF;
+    transform:scale(2,2);
+}
+
+.circle2 {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%;
+    background: white;
+    transform:scale(0,0);
+    transition: transform 2s ease, opacity .5s ease, color 1s ease;
+}
+.circle2.animated {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%;
+    background: #00CAFF;
+    transform:scale(2,2);
+}
+.circle3 {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%;
+    background: lightblue;
+    transform:scale(0,0);
+    transition: transform 2.5s ease, opacity 2s ease;
+}
+.circle3.animated {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%;
+    background: white;
+    transform:scale(2,2);
+}
+.circle4 {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%;
+    background: lightblue;
+    transform:scale(0,0);
+    transition: transform 3s ease, opacity 2s ease;
+}
+.circle4.animated {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%;
+    background: white;
+    transform:scale(2,2);
+}
+.circle5 {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%;
+    background: lightblue;
+    transform:scale(0,0);
+    transition: transform 3.5s ease, opacity 2s ease;
+}
+.circle5.animated {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%;
+    background: white;
+    transform:scale(2,2);
+}
+
+.meet-text {
+    position: absolute;
+    top: 20%;
+    z-index: 1000;
+    font-family: 'Aaux Prolight';
+    font-size: 50px;
+    color: dimgray;
+    opacity: 0;
+    transition: opacity 1.3s ease, transform 1.3s ease;
+    transform:translateY(0);
+    width: 100vw;
+    text-align: center;
+    max-width: 100%;
+}
+
+.meet-text2 {
+    position: relative;
+    z-index: 1000;
+    font-family: 'amazon ember';
+    font-size: 75px;
+    color: #01a8e0;
+    opacity: 0;
+    transition: opacity 1.3s ease, transform 1.3s ease;
+    transform:translateY(0);
+    width: 100vw;
+    text-align: center;
+    max-width: 100%;
+}
+.smile-wrap {
+    position: absolute;
+    width: 100vw;
+    max-width: 100%;
+    text-align: center;
+    top: 25.5%;
+}
+#smile {
+    position: relative;
+    width: 150px;
+    z-index: 10000;
+    transition: opacity 1.3s ease;
+    opacity: 0;
+    top: -35px;
+}
+.enter-button-wrap {
+    position: absolute;
+    width: 100vw;
+    height: 50px;
+    text-align: center;
+    top: 41%;
+    z-index: 100;
+}
+.enter-button {
+    font-family: 'Aaux Prolight';
+    font-size: 20px;
+    border: 2px solid #B5C0C3;
+    color: #B5C0C3;
+    padding: 5px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all .3s ease, background .5s ease;
+    opacity: 0;
+}
+.enter-button:hover {
+    background: #01a8e0;
+    color: white;
+    border: none;
+}
+.enter-button:active {
+
+}
+
+
+
+
+
