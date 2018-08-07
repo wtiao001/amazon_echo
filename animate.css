@@ -2026,6 +2026,7 @@
   to {
     -webkit-transform: perspective(400px);
     transform: perspective(400px);
+      opacity: 1;
   }
 }
 
@@ -2059,10 +2060,11 @@
   to {
     -webkit-transform: perspective(400px);
     transform: perspective(400px);
+      opacity: 1;
   }
 }
 
-.flipInX {
+.animated.flipInX {
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   -webkit-animation-name: flipInX;

@@ -5,21 +5,18 @@ body {
     overflow-x: hidden;
 }
 #intro-gif {
-  position: fixed;
-  width: 100vw;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  /* top: -5%; */
-  z-index: 10000;
-  opacity: 1;
-  height: 100vh;
-  transition: all .5s ease;
-  background-color: white;
-}
-#intro-gif img {
-  width: 100%;
-  position: fixed;
+    position: absolute;
+    background-image: url(images/alexa_logo_white.gif);
+    background-size: cover;
+    background-position: center;
+    height: 110%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    top: -5%;
+    z-index: 10000;
+    opacity: 1;
+    transition: all .5s ease;
 }
 
 .scroll-button-wrap {
@@ -49,19 +46,9 @@ body {
     left: -11px;
     transform: rotate(-140deg);
 }
-
-.next {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
-    z-index: 99;
-}
-
 .page2 {
     position: relative;
     width: 100vw;
-    height: 300vh;
     max-width: 100%;
     z-index: 100;
 }
@@ -106,6 +93,7 @@ body {
     text-decoration: none;
     font-family: 'Aaux Prolight';
     transition: all .3s ease;
+    cursor: pointer;
 }
 .nav-line {
     position: relative;
@@ -163,7 +151,7 @@ body {
     transition: all .3s ease;
 }
 .menu-button:before,
-.menu-button:after
+.menu-button:after 
 {
     content:'';
     position: absolute;
@@ -210,28 +198,28 @@ body {
 /* svg icons hover */
 
 a.svg1 {
-    content: url(/icons/Artboard%203.svg);
-    position: relative;
-    top: -100px;
-    right: 0;
-    bottom: 0;
+    content: url(/icons/Artboard3.svg); 
+    position: relative; 
+    top: -100px; 
+    right: 0; 
+    bottom: 0; 
     left: 0;
     width: 100px;
     height: 100px;
     display: block;
 }
 a.svg1:hover {
-    content: url(/icons/Artboard%2032.svg);
+    content: url(/icons/Artboard32.svg); 
 }
 a.svg1:hover + .icon-text-1 {
     visibility: visible;
 }
 a.svg2 {
-    content: url(/icons/Artboard%204.svg);
-    position: relative;
-    top: -100px;
-    right: 0;
-    bottom: 0;
+    content: url(/icons/Artboard4.svg); 
+    position: relative; 
+    top: -100px; 
+    right: 0; 
+    bottom: 0; 
     left: 0;
     width: 100px;
     height: 100px;
@@ -241,36 +229,36 @@ a.svg2:hover + .icon-text-2 {
     visibility: visible;
 }
 a.svg2:hover {
-    content: url(/icons/Artboard%2042.svg);
+    content: url(/icons/Artboard42.svg); 
 }
 a.svg3 {
-    content: url(icons/Artboard%205.svg);
-    position: relative;
-    top: -100px;
-    right: 0;
-    bottom: 0;
+    content: url(icons/Artboard5.svg); 
+    position: relative; 
+    top: -100px; 
+    right: 0; 
+    bottom: 0; 
     left: 0;
     width: 100px;
     height: 100px;
 }
 a.svg3:hover {
-    content: url(/icons/Artboard%2052.svg);
+    content: url(/icons/Artboard52.svg); 
 }
 a.svg3:hover + .icon-text-3 {
     visibility: visible;
 }
 a.svg4 {
-    content: url(/icons/Artboard%206.svg);
-    position: relative;
-    top: -100px;
-    right: 0;
-    bottom: 0;
+    content: url(/icons/Artboard6.svg); 
+    position: relative; 
+    top: -100px; 
+    right: 0; 
+    bottom: 0; 
     left: 0;
     width: 100px;
     height: 100px;
 }
 a.svg4:hover {
-    content: url(/icons/Artboard%2062.svg);
+    content: url(/icons/Artboard62.svg); 
 }
 a.svg4:hover + .icon-text-4 {
     visibility: visible;
@@ -359,6 +347,145 @@ a.svg4:hover + .icon-text-4 {
     font-weight: 300;
     margin-left: 10px;
 }
+/* echo show text */
+.page-1-img2 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    background-image: url(images/Artboard%204-100.jpg);
+    background-position: 80% 50%;
+    background-size: cover;
+}
+.pg2-text-wrap2 {
+    position: absolute;
+    top: 80px;
+    width: 100vw;
+    max-width: 100%;
+    text-align: left;
+    padding: 50px;
+}
+.pg2-text12 {
+    position: relative;
+    display: block;
+    font-family: 'Aaux Prolight';
+    font-size: 80px;
+    color: white;
+    font-weight: 300;
+}
+.pg2-text22 {
+    position: relative;
+    display: block;
+    font-family: 'amazon ember';
+    font-size: 80px;
+    color: #00caff;
+    font-weight: 300;
+}
+.pg2-button2 {
+    position: absolute;
+    top: 250px;
+    width: 100vw;
+    text-align: center;
+}
+.pg2-scroll-text2 {
+    display: block;
+    font-family: 'Aaux Prolight';
+    font-size: 30px;
+    color: #D7D6D6;
+    margin-top: 10px;
+}
+.pg2-scroll-text22 {
+    display: block;
+    font-family: 'Aaux Prolight';
+    font-size: 30px;
+    color: #D7D6D6;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.options2 {
+    display: inline-block;
+    font-family: 'Aaux Prolight';
+    font-size: 30px;
+    color: #D7D6D6;
+    background:;
+    width: 200px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 5px;
+    border: 1.5px solid #D7D6D6;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+}
+.options2 span:after {
+      content: '\00bb';
+      position: relative;
+      opacity: 0;
+      top: 0;
+      right: 0px;
+      transition: 0.3s ease;
+    }
+.options2:hover span:after {
+      opacity: 1;
+      right: -5px;
+      color: white;
+}
+.options2:hover span {
+    padding-left: 4px;
+    color: white;
+    transition: 0.3s ease;
+}
+.options2:hover {
+    background: #00caff;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+.bounce-scroll2 {
+    position: absolute;
+    transition: all .3s ease;
+    content:'';
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    left: 35px;
+}
+.bounce-scroll2:before,
+.bounce-scroll2:after {
+    content:'';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: #D7D6D6;
+    transition: all .5s ease;
+}
+.bounce-scroll2:before {
+    top: 4px;
+    left: 8px;
+    transform: rotate(-45deg);
+}
+.bounce-scroll2:after {
+    top: 4px;
+    left: -8px;
+    transform: rotate(45deg);
+}
+.show-content {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+.show-text {
+    display: block;
+    padding-top: 50vh;
+    font-family: 'amazon ember';
+    font-size: 80px;
+}
+
+
 .pg2-button {
     position: absolute;
     top: 200px;
@@ -391,10 +518,10 @@ a.svg4:hover + .icon-text-4 {
     border-radius: 5px;
     text-decoration: none;
     margin-top: 5px;
-    border: 2px solid dimgrey;
+    border: 1.5px solid dimgrey;
     border-radius: 5px;
     padding-top: 3px;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
     padding-left: 0px;
 }
 .options span:after {
@@ -488,7 +615,7 @@ a.svg4:hover + .icon-text-4 {
 }
 .dropdown:hover {
     height: 130px;
-
+    
 }
 .dropdown:hover a {
     opacity: 1;
@@ -503,15 +630,25 @@ a.svg4:hover + .icon-text-4 {
 }
 .speaker-content {
     width: 100vw;
-    height: 100vh;
     max-width: 100%;
+    text-align: center;
+    padding-top: 10vh;
+}
+.speaker-img {
+    background-image: url(images/Echo%20X-ray.png);
+    background-size: cover;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    
 }
 .speaker-text-wrap {
     position: relative;
-    top: 17vh;
-    left: 45vw;
+    display: inline-block;
+    top:-100px;
     width: 40vw;
     text-align: center;
+    
 }
 
 .speaker-text-1 {
@@ -538,7 +675,7 @@ a.svg4:hover + .icon-text-4 {
     width: 100vw;
     max-width: 100%;
     text-align: center;
-    top: 23vh;
+    top: 5vh;
 }
 .speaker-info {
     position: relative;
@@ -563,22 +700,33 @@ a.svg4:hover + .icon-text-4 {
     width: 100vw;
     max-width: 100%;
     text-align: center;
-    top: 27vh;
+    padding-top: 10vh;
 }
 .speaker-bubble1 {
     position: relative;
     display: inline-block;
     height: 50px;
-    width: 250px;
+    width: 300px;
     background: snow;
     border-radius: 10px;
-    margin: 25px;
+    margin: 25px;    
+}
+.speaker-bubble1-tri {
+    position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 25px solid snow;
+	border-right: 25px solid transparent;
+    left: 25px;
+    top: 50px;
+    transition: all 0.5s ease;
+    z-index: 10;
 }
 .speaker-bubble2 {
     position: relative;
     display: inline-block;
     height: 50px;
-    width: 250px;
+    width: 300px;
     background: snow;
     border-radius: 10px;
     margin: 25px;
@@ -587,16 +735,35 @@ a.svg4:hover + .icon-text-4 {
     position: relative;
     display: inline-block;
     height: 50px;
-    width: 250px;
+    width: 300px;
     background: snow;
     border-radius: 10px;
     margin: 25px;
 }
+.bubble-quote {
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    font-family: "bookerly";
+    font-size: 15px;
+    color: dimgray;
+    padding-top: 13px;
+}
+.bubble-quote1 {
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    font-family: "bookerly";
+    font-size: 15px;
+    color: dimgray;
+    padding-top: 6px;
+}
 .music-logos {
     position: relative;
-    display: block;
+    width: 100vw;
+    display: inline-block;
+    top:0;
     text-align: center;
-    top: 27vh;
 }
 .logos-1, .logos-2 {
     display: block;
@@ -609,15 +776,16 @@ a.svg4:hover + .icon-text-4 {
 }
 .amazon_music {
     width: 100px;
-    padding-left: 50px;
+    padding-left: 60px;
 }
 .spotify {
     width: 200px;
-    padding-left: 50px;
+    padding-left: 60px;
 }
 .pandora {
     width: 200px;
-    padding-left: 50px;
+    padding-left: 40px;
+    padding-bottom: 8px;
 }
 .audible {
     width: 100px;
@@ -631,13 +799,23 @@ a.svg4:hover + .icon-text-4 {
 .mic-content {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    padding-top: 15vh;
+    text-align: center;
 }
 .mic-text-wrap {
     text-align: center;
     position: relative;
-    width: 900px;
-    top: 25vh;
+    display: inline-block;
+    width: 550px;
+    margin-top: 0;
+    margin-right: 100px;
+}
+.mic-image {
+    background-image: url(images/echo-top.png);
+    display: inline-block;
+    background-size: cover;
+    width: 400px;
+    height: 400px;   
 }
 .mic-text-1 {
     position: relative;
@@ -654,13 +832,46 @@ a.svg4:hover + .icon-text-4 {
     font-weight: 500;
     margin-top: 20px;
 }
+.mic-box-wrap {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height:10px;
+    margin-top: 20px;
+    text-align: center;
+}
 .mic-box {
     position: relative;
     display: inline-block;
-    margin-top: 20px;
     width: 100px;
     height: 5px;
     background: black;
+}
+.mic-learn {
+    position: relative;
+    display: block;
+    
+    font-family: 'Aaux Prolight';
+    font-size: 20px;
+    color: #00caff;
+    margin-top: 10px;
+}
+.mic-info {
+    position: relative;
+    display: inline-block;
+    font-family: 'Aaux Prolight';
+    font-size: 22.5px;
+    text-align: center;
+    width: 35vw;
+    padding-top: 3vh; 
+}
+.mic-bubble-wrap {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 .echo-quote {
     position: relative;
@@ -670,34 +881,14 @@ a.svg4:hover + .icon-text-4 {
     letter-spacing: 10px;
     width: 100vw;
     text-align: center;
-    top: -35px;
 }
 .handsfree-content {
-    height: 90vh;
+    position: relative;
     width: 100vw;
     padding-left: 10vw;
     padding-right: 10vw;
-    padding-top: 60px;
-}
-.mic-info-wrap {
-    width: 900px;
-    text-align: center;
-}
-.mic-info {
-    position: relative;
-    display: inline-block;
-    font-family: 'Aaux Prolight';
-    font-size: 22.5px;
-    text-align: center;
-    width: 35vw;
-    top: 17vw;
-}
-.mic-bubble-wrap {
-    position: relative;
-    width: 100vw;
-    max-width: 100%;
-    text-align: center;
-    top: 40vh;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
 }
 .handsfree-img {
     position: relative;
@@ -707,11 +898,11 @@ a.svg4:hover + .icon-text-4 {
 }
 .handsfree-text-wrap {
     display: inline-block;
-    text-align: center;
+    text-align: left;
     width: 580px;
     height: 500px;
     vertical-align: top;
-    padding-left: 30px;
+    padding-left: 70px;
 }
 .handsfree-text1-wrap {
     width: 40vw;
@@ -721,7 +912,7 @@ a.svg4:hover + .icon-text-4 {
     position: relative;
     text-align: left;
     font-family: 'Gabriel Sans Thin';
-    font-size: 43px;
+    font-size: 40px;
     font-weight: 500;
 }
 .handsfree-info {
@@ -730,7 +921,7 @@ a.svg4:hover + .icon-text-4 {
     font-family: 'Aaux Prolight';
     font-size: 22.5px;
     text-align: left;
-    width: 40vw;
+    width: 35vw;
     margin-top: 50px;
     word-spacing: 4.5px;
 }
@@ -739,6 +930,7 @@ a.svg4:hover + .icon-text-4 {
 }
 .learn-hands {
     display: block;
+    text-align: center;
     font-family: 'Aaux Prolight';
     font-size: 20px;
     color: #00caff;
@@ -747,12 +939,12 @@ a.svg4:hover + .icon-text-4 {
 .gradient {
     position: relative;
     width: 100vw;
-    height: 100px;
+    height: 200px;
     background: linear-gradient(#efece9,#f2f2ef);
+    text-align: center;
 }
 .voice-content {
     position: relative;
-    height: 120vh;
     width: 100vw;
 }
 .voice-background {
@@ -760,6 +952,35 @@ a.svg4:hover + .icon-text-4 {
     background-size: cover;
     background-position: center;
     height: 100%;
+}
+.voice-text {
+    position: relative;
+    text-align: center;
+    font-family: 'Gabriel Sans Thin';
+    font-size: 50px;
+    font-weight: 500;
+    padding-top: 5vh;
+}
+.voice-info {
+    position: relative;
+    display: inline-block;
+    font-family: 'Aaux Prolight';
+    font-size: 22.5px;
+    text-align: center;
+    width: 36vw;
+    margin-top: 3vh;
+    word-spacing: 4.5px;
+}
+.voice-info-wrap {
+    width: 100vw;
+    text-align: center;
+}
+.voice-learn {
+    text-align: center;
+    font-family: 'Aaux Prolight';
+    font-size: 20px;
+    color: #00caff;
+    margin-top: 10px;
 }
 @media screen and (max-width: 800px) {
     .logo {
@@ -890,26 +1111,26 @@ a.svg4:hover + .icon-text-4 {
 /* svg icons hover */
 
     a.ham-svg1 {
-        content: url(/icons/Artboard%203.svg);
-        position: relative;
-        right: 0;
-        bottom: 0;
+        content: url(/icons/Artboard3.svg); 
+        position: relative; 
+        right: 0; 
+        bottom: 0; 
         left: 0;
         width: 100px;
         height: 100px;
         display: block;
     }
     a.ham-svg1:hover {
-        content: url(/icons/Artboard%2032.svg);
+        content: url(/icons/Artboard32.svg); 
     }
     a.ham-svg1:hover + .icon-text-1 {
         visibility: visible;
     }
     a.ham-svg2 {
-        content: url(/icons/Artboard%204.svg);
-        position: relative;
-        right: 0;
-        bottom: 0;
+        content: url(/icons/Artboard4.svg); 
+        position: relative; 
+        right: 0; 
+        bottom: 0; 
         left: 0;
         width: 100px;
         height: 100px;
@@ -919,40 +1140,39 @@ a.svg4:hover + .icon-text-4 {
         visibility: visible;
     }
     a.ham-svg2:hover {
-        content: url(/icons/Artboard%2042.svg);
+        content: url(/icons/Artboard42.svg); 
     }
     a.ham-svg3 {
-        content: url(icons/Artboard%205.svg);
-        position: relative;
-        right: 0;
-        bottom: 0;
+        content: url(icons/Artboard5.svg); 
+        position: relative;  
+        right: 0; 
+        bottom: 0; 
         left: 0;
         width: 100px;
         height: 100px;
     }
     a.ham-svg3:hover {
-        content: url(/icons/Artboard%2052.svg);
+        content: url(/icons/Artboard52.svg); 
     }
     a.ham-svg3:hover + .icon-text-3 {
         visibility: visible;
     }
     a.ham-svg4 {
-        content: url(/icons/Artboard%206.svg);
-        position: relative;
-        right: 0;
-        bottom: 0;
+        content: url(/icons/Artboard6.svg); 
+        position: relative;  
+        right: 0; 
+        bottom: 0; 
         left: 0;
         width: 100px;
         height: 100px;
     }
     a.ham-svg4:hover {
-        content: url(/icons/Artboard%2062.svg);
+        content: url(/icons/Artboard62.svg); 
     }
     a.ham-svg4:hover + .icon-text-4 {
         visibility: visible;
     }
 }
-
-.hideme {
+.revealOnScroll {
     opacity: 0;
 }

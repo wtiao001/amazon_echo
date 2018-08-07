@@ -161,7 +161,7 @@ body {
     margin: 0;
     padding: 0;
     position: absolute;
-    width: 900px;
+    width: 400px;
     height: 140px;
     top: 10%;
     left: 50%;
@@ -351,7 +351,7 @@ body {
 
 .meet-text {
     position: absolute;
-    top: 20%;
+    top: 15%;
     z-index: 1000;
     font-family: 'Aaux Prolight';
     font-size: 50px;
@@ -382,7 +382,7 @@ body {
     width: 100vw;
     max-width: 100%;
     text-align: center;
-    top: 25.5%;
+    top: 22.5%;
 }
 #smile {
     position: relative;
