@@ -179,7 +179,7 @@ a.svg2:hover {
     content: url(/icons/Artboard42.svg); 
 }
 a.svg3 {
-    content: url(icons/Artboard5.svg); 
+    content: url(/icons/Artboard5.svg); 
     position: relative; 
     top: -100px; 
     right: 0; 
