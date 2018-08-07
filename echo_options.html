@@ -1,8 +1,9 @@
 <!DOCTYPE>
 <html>
     <head>
-        <link rel="stylesheet" href="animate.css">
-        <link rel="stylesheet" href="options.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/options.css">
+        <link rel="stylesheet" href="fonts/stylesheet.css">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -15,10 +16,10 @@
                       <img src="icons/Amazon_Echo_logo-01.svg" id="echo-logo">
                   </a>
                   <div class="button-wrap">
-                       <a class="products">Echo products</a>
+                       <a class="products">Echo Products</a>
                        <div class="dropdown">
                            <div class="icon">
-                               <a href="#" class="svg1"></a>
+                               <a href="echo.html" class="svg1"></a>
                                <div class="icon-text-1">Echo</div>
                            </div>
                            <div class="icon2">
@@ -71,36 +72,274 @@
         <div class="color-display">
             <div class="color-wrap">
                 <div class="background-color">
-                    <div class="charcoal">
-                        <img class="charcoal-img" src="images/Artboard%202-8.png"/>
+                    <div class="charcoal big">
+                        <img class="charcoal-img img" src="images/charcoal.png"/>
                         <div class="charcoal-s"></div>   
                     </div>
-                    <div class="sandstone"></div>
-                    <div class="heather"></div>
-                    <div class="silver"></div>
-                    <div class="walnut"></div>
-                    <div class="oak"></div>
+                    <div class="sandstone big">
+                        <img class="sandstone-img img" src="images/sandstone.png"/>
+                        <div class="sandstone-s"></div>   
+                    </div>
+                    <div class="heather big">
+                        <img class="heather-img img" src="images/heather.png"/>
+                        <div class="heather-s"></div>   
+                    </div>
+                    <div class="silver big">
+                        <img class="silver-img img" src="images/silver.png"/>
+                        <div class="silver-s"></div> 
+                    </div>
+                    <div class="walnut big">
+                        <img class="walnut-img img" src="images/walnut.png"/>
+                        <div class="walnut-s"></div> 
+                    </div>
+                    <div class="oak big">
+                        <img class="oak-img img" src="images/oak.png"/>
+                        <div class="oak-s"></div> 
+                    </div>
                 </div>
                 
             </div>
-            
-            <div class="background-color-small">
-                
-                <div class="sandstone"></div>
-                <div class="heather"></div>
-                <div class="silver"></div>
-                <div class="walnut"></div>
-                <div class="oak"></div>
-            </div>
+
             <div class="echo-img">
                 <div></div>
+            </div>
+            <div class="color-button-wrap">
+                <div class="charcoal-button button"></div>
+                <div class="sandstone-button button"></div>
+                <div class="heather-button button"></div>
+                <div class="silver-button button"></div>
+                <div class="walnut-button button"></div>
+                <div class="oak-button button"></div>
+            </div>
+            <div class="style-wrap">
+                <div class="style-text revealOnScroll" data-animation="flipInX" data-timeout="500">Suit your style.</div>
+                <div class="color-text oakt">Oak</div>
+                <div class="color-text charc">Charcoal</div>
+                <div class="color-text sand">Sandstone</div>
+                <div class="color-text heath">Heather</div>
+                <div class="color-text silv">Silver</div>
+                <div class="color-text wal">Walnut</div>
+                <div class="price-text revealOnScroll" data-animation="fadein" data-timeout="2000">$99.99</div>
+                <a href="echo_options.html" class="cart revealOnScroll" data-animation="fadein" data-timeout="2000"><span>Add to cart</span></a>
             </div>
         </div>
       </div>  
 
     </body>
     <script>
+        $('.oak-button').click(function() {
+            $('.sandstone').css({"width":"0"});
+            $('.sandstone-s').css({"width":"0vw"});
+            $('.charcoal').css({"width":"0vw"});
+            $('.charcoal-s').css({"width":"0"});
+            $('.heather').css({"width":"100vw"});
+            $('.heather-s').css({"width":"100vw"});
+            $('.silver').css({"width":"100vw"});
+            $('.silver-s').css({"width":"0vw"});
+            $('.walnut').css({"width":"100vw"});
+            $('.walnut-s').css({"width":"0vw"});
+            $('.oak').css({"width":"100vw"});
+            $('.oak-img').css({"opacity":"1"});
+            $('.oak-s').css({"width":"100vw"});
+            $('.oakt').css({"opacity":"1"});
+            $('.charc').css({"opacity":"0"});
+            $('.silv').css({"opacity":"0"});
+            $('.heath').css({"opacity":"0"});
+            $('.sand').css({"opacity":"0"});
+            $('.wal').css({"opacity":"0"});
+            $('.price-text').css({"color":"black"});
+            $('.cart').css({"border-color":"black"});
+            $('.cart').css({"color":"black"});
 
+        });
+        $('.walnut-button').click(function() {
+            $('.sandstone').css({"width":"0"});
+            $('.sandstone-s').css({"width":"0vw"});
+            $('.charcoal').css({"width":"0vw"});
+            $('.charcoal-s').css({"width":"0"});
+            $('.heather').css({"width":"100vw"});
+            $('.heather-s').css({"width":"100vw"});
+            $('.silver').css({"width":"100vw"});
+            $('.silver-s').css({"width":"100vw"});
+            $('.walnut').css({"width":"100vw"});
+            $('.walnut-img').css({"opacity":"1"});
+            $('.walnut-s').css({"width":"100vw"});
+            $('.oak').css({"width":"0vw"});
+            $('.oak-img').css({"opacity":"0"});
+            $('.oak-s').css({"width":"0vw"});
+            $('.wal').css({"opacity":"1"});
+            $('.oakt').css({"opacity":"0"}); 
+            $('.charc').css({"opacity":"0"});
+            $('.silv').css({"opacity":"0"});
+            $('.heath').css({"opacity":"0"});
+            $('.sand').css({"opacity":"0"});
+            $('.price-text').css({"color":"whitesmoke"});
+            $('.cart').css({"border-color":"whitesmoke"});
+            $('.cart:hover').css({"border-color":"whitesmoke"});
+            $('.cart').css({"color":"whitesmoke"});
+
+        });
+        $('.silver-button').click(function() {
+            $('.sandstone').css({"width":"0"});
+            $('.sandstone-s').css({"width":"0vw"});
+            $('.charcoal').css({"width":"0vw"});
+            $('.charcoal-s').css({"width":"0"});
+            $('.heather').css({"width":"100vw"});
+            $('.heather-s').css({"width":"100vw"});
+            $('.silver').css({"width":"100vw"});
+            $('.silver-img').css({"opacity":"1"});
+            $('.silver-s').css({"width":"100vw"});
+            $('.walnut').css({"width":"0vw"});
+            $('.walnut-img').css({"opacity":"0"});
+            $('.walnut-s').css({"width":"0vw"});
+            $('.oak').css({"width":"0vw"});
+            $('.oak-img').css({"opacity":"0"});
+            $('.oak-s').css({"width":"0vw"});
+            $('.silv').css({"opacity":"1"});
+            $('.oakt').css({"opacity":"0"});
+            $('.charc').css({"opacity":"0"});
+            $('.heath').css({"opacity":"0"});
+            $('.sand').css({"opacity":"0"});
+            $('.wal').css({"opacity":"0"});
+            $('.price-text').css({"color":"black"});
+            $('.cart').css({"border-color":"black"});
+            $('.cart').css({"color":"black"});
+
+        });
+        $('.heather-button').click(function() {
+            $('.sandstone').css({"width":"0"});
+            $('.sandstone-s').css({"width":"0vw"});
+            $('.charcoal').css({"width":"0vw"});
+            $('.charcoal-s').css({"width":"0"});
+            $('.heather').css({"width":"100vw"});
+            $('.heather-img').css({"opacity":"1"});
+            $('.heather-s').css({"width":"100vw"});
+            $('.silver').css({"width":"0vw"});
+            $('.silver-img').css({"opacity":"0"});
+            $('.silver-s').css({"width":"0vw"});
+            $('.walnut').css({"width":"0vw"});
+            $('.walnut-img').css({"opacity":"0"});
+            $('.walnut-s').css({"width":"0vw"});
+            $('.oak').css({"width":"0vw"});
+            $('.oak-img').css({"opacity":"0"});
+            $('.oak-s').css({"width":"0vw"});
+            $('.heath').css({"opacity":"1"});
+            $('.oakt').css({"opacity":"0"});
+            $('.charc').css({"opacity":"0"});
+            $('.silv').css({"opacity":"0"});;
+            $('.sand').css({"opacity":"0"});
+            $('.wal').css({"opacity":"0"});
+            $('.price-text').css({"color":"black"});
+            $('.cart').css({"border-color":"black"});
+            $('.cart').css({"color":"black"});
+
+        });
+        $('.sandstone-button').click(function() {
+            $('.charcoal').css({"width":"0"});
+            $('.charcoal-s').css({"width":"0"});
+//            $('.charcoal-img').css({"opacity":"0"});
+            $('.sandstone').css({"width":"100vw"});
+            $('.sandstone-s').css({"width":"100vw"});
+            $('.sandstone-img').css({"opacity":"1"});
+            $('.heather').css({"width":"0vw"});
+            $('.heather-img').css({"opacity":"0"});
+            $('.heather-s').css({"width":"0vw"});
+            $('.silver').css({"width":"0vw"});
+            $('.silver-img').css({"opacity":"0"});
+            $('.silver-s').css({"width":"0vw"});
+            $('.walnut').css({"width":"0vw"});
+            $('.walnut-img').css({"opacity":"0"});
+            $('.walnut-s').css({"width":"0vw"});
+            $('.oak').css({"width":"0vw"});
+            $('.oak-img').css({"opacity":"0"});
+            $('.oak-s').css({"width":"0vw"});
+            $('.sand').css({"opacity":"1"});
+            $('.oakt').css({"opacity":"0"});
+            $('.charc').css({"opacity":"0"});
+            $('.silv').css({"opacity":"0"});
+            $('.heath').css({"opacity":"0"});
+            $('.wal').css({"opacity":"0"});
+            $('.price-text').css({"color":"black"});
+            $('.cart').css({"border-color":"black"});
+            $('.cart').css({"color":"black"});
+        });
+
+        $('.charcoal-button').click(function() {
+            $('.sandstone').css({"width":"0"});
+            $('.sandstone-s').css({"width":"0vw"});
+            $('.sandstone-img').css({"opacity":"0"});
+            $('.charcoal').css({"width":"100vw"});
+            $('.charcoal-s').css({"width":"100vw"});
+            $('.charcoal-img').css({"opacity":"1"});
+            $('.heather').css({"width":"0vw"});
+            $('.heather-img').css({"opacity":"0"});
+            $('.heather-s').css({"width":"0vw"});
+            $('.silver').css({"width":"0vw"});
+            $('.silver-img').css({"opacity":"0"});
+            $('.silver-s').css({"width":"0vw"});
+            $('.walnut').css({"width":"0vw"});
+            $('.walnut-img').css({"opacity":"0"});
+            $('.walnut-s').css({"width":"0vw"});
+            $('.oak').css({"width":"0vw"});
+            $('.oak-img').css({"opacity":"0"});
+            $('.oak-s').css({"width":"0vw"});
+            $('.charc').css({"opacity":"1"});
+            $('.oakt').css({"opacity":"0"});
+            $('.silv').css({"opacity":"0"});
+            $('.heath').css({"opacity":"0"});
+            $('.sand').css({"opacity":"0"});
+            $('.wal').css({"opacity":"0"});
+            $('.price-text').css({"color":"whitesmoke"});
+            $('.cart').css({"border-color":"whitesmoke"});
+            $('.cart').css({"color":"whitesmoke"});
+        });
+        
+//animate on scroll script
+$(function() {
+
+  var $window           = $(window),
+      win_height_padded = $window.height() * 1.1,
+      isTouch           = Modernizr.touch;
+
+  if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+
+  $window.on('scroll', revealOnScroll);
+
+  function revealOnScroll() {
+    var scrolled = $window.scrollTop(),
+        win_height_padded = $window.height() * 1.1;
+
+    // Showed...
+    $(".revealOnScroll:not(.animated)").each(function () {
+      var $this     = $(this),
+          offsetTop = $this.offset().top;
+
+      if (scrolled + win_height_padded > offsetTop) {
+        if ($this.data('timeout')) {
+          window.setTimeout(function(){
+            $this.addClass('animated ' + $this.data('animation'));
+          }, parseInt($this.data('timeout'),10));
+        } else {
+          $this.addClass('animated ' + $this.data('animation'));
+        }
+      }
+    });
+    // Hidden...
+   $(".revealOnScroll.animated").each(function (index) {
+      var $this     = $(this),
+          offsetTop = $this.offset().top;
+      if (scrolled + win_height_padded < offsetTop) {
+        $(this).removeClass('animated flipInX fadein fadeinup')
+      }
+    });
+  }
+
+  revealOnScroll();
+});
+//
+//        $('#toggle').click(function() {
+//            $('#test').toggleClass('class1');
+//        });
     </script>
 
 </html>

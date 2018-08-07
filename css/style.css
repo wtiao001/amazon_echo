@@ -4,12 +4,9 @@ body {
     background: #efece9;
     overflow-x: hidden;
 }
-@font-face {
-    
-}
 #intro-gif {
     position: absolute;
-    background-image: url(images/alexa_logo_white.gif);
+    background-image: url(/images/alexa_logo_white.gif);
     background-size: cover;
     background-position: center;
     height: 110%;
@@ -192,7 +189,7 @@ body {
     left: 0;
     top: 40px;
     background: #E8E7E7;
-    opacity: .95;
+    opacity: .98;
     transition: height .5s ease;
     text-align: center;
     z-index: 10;
@@ -201,7 +198,7 @@ body {
 /* svg icons hover */
 
 a.svg1 {
-    content: url(icons/Artboard3.svg); 
+    content: url(/icons/Artboard3.svg); 
     position: relative; 
     top: -100px; 
     right: 0; 
@@ -212,13 +209,13 @@ a.svg1 {
     display: block;
 }
 a.svg1:hover {
-    content: url(icons/Artboard32.svg); 
+    content: url(/icons/Artboard32.svg); 
 }
 a.svg1:hover + .icon-text-1 {
     visibility: visible;
 }
 a.svg2 {
-    content: url(icons/Artboard4.svg); 
+    content: url(/icons/Artboard4.svg); 
     position: relative; 
     top: -100px; 
     right: 0; 
@@ -232,10 +229,10 @@ a.svg2:hover + .icon-text-2 {
     visibility: visible;
 }
 a.svg2:hover {
-    content: url(icons/Artboard42.svg); 
+    content: url(/icons/Artboard42.svg); 
 }
 a.svg3 {
-    content: url(icons/Artboard5.svg); 
+    content: url(/icons/Artboard5.svg); 
     position: relative; 
     top: -100px; 
     right: 0; 
@@ -245,13 +242,13 @@ a.svg3 {
     height: 100px;
 }
 a.svg3:hover {
-    content: url(icons/Artboard52.svg); 
+    content: url(/icons/Artboard52.svg); 
 }
 a.svg3:hover + .icon-text-3 {
     visibility: visible;
 }
 a.svg4 {
-    content: url(icons/Artboard6.svg); 
+    content: url(/icons/Artboard6.svg); 
     position: relative; 
     top: -100px; 
     right: 0; 
@@ -261,7 +258,7 @@ a.svg4 {
     height: 100px;
 }
 a.svg4:hover {
-    content: url(icons/Artboard62.svg); 
+    content: url(/icons/Artboard62.svg); 
 }
 a.svg4:hover + .icon-text-4 {
     visibility: visible;
@@ -287,7 +284,7 @@ a.svg4:hover + .icon-text-4 {
     display: block;
     position: relative;
     font-size: 18px;
-    font-family: 'Amazon Ember';
+    font-family: 'amazon_emberregular';
     color: #00caff;
     visibility: hidden;
     top: -5px;
@@ -315,7 +312,7 @@ a.svg4:hover + .icon-text-4 {
     width: 100vw;
     height: 100vh;
     max-width: 100%;
-    background-image: url(images/dog.jpg);
+    background-image: url(/images/dog.jpg);
     background-position: 80% 50%;
     background-size: cover;
 }
@@ -336,7 +333,7 @@ a.svg4:hover + .icon-text-4 {
 .pg2-text1 {
     position: relative;
     display: inline-block;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     font-size: 80px;
     color: black;
     font-weight: 300;
@@ -344,7 +341,7 @@ a.svg4:hover + .icon-text-4 {
 .pg2-text2 {
     position: relative;
     display: inline-block;
-    font-family: 'amazon ember';
+    font-family: 'amazon_emberregular';
     font-size: 80px;
     color: #00caff;
     font-weight: 300;
@@ -358,7 +355,7 @@ a.svg4:hover + .icon-text-4 {
     width: 100vw;
     height: 100vh;
     max-width: 100%;
-    background-image: url(images/Artboard%204-100.jpg);
+    background-image: url(/images/Artboard%204-100.jpg);
     background-position: 80% 50%;
     background-size: cover;
 }
@@ -373,7 +370,7 @@ a.svg4:hover + .icon-text-4 {
 .pg2-text12 {
     position: relative;
     display: block;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     font-size: 80px;
     color: white;
     font-weight: 300;
@@ -381,7 +378,7 @@ a.svg4:hover + .icon-text-4 {
 .pg2-text22 {
     position: relative;
     display: block;
-    font-family: 'amazon ember';
+    font-family: 'amazon_emberregular';
     font-size: 80px;
     color: #00caff;
     font-weight: 300;
@@ -394,14 +391,14 @@ a.svg4:hover + .icon-text-4 {
 }
 .pg2-scroll-text2 {
     display: block;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     font-size: 30px;
     color: #D7D6D6;
     margin-top: 10px;
 }
 .pg2-scroll-text22 {
     display: block;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     font-size: 30px;
     color: #D7D6D6;
     margin-right: 10px;
@@ -410,7 +407,7 @@ a.svg4:hover + .icon-text-4 {
 }
 .options2 {
     display: inline-block;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     font-size: 30px;
     color: #D7D6D6;
     background:;
@@ -484,7 +481,7 @@ a.svg4:hover + .icon-text-4 {
 .show-text {
     display: block;
     padding-top: 50vh;
-    font-family: 'amazon ember';
+    font-family: 'amazon_emberregular';
     font-size: 80px;
 }
 
@@ -497,14 +494,14 @@ a.svg4:hover + .icon-text-4 {
 }
 .pg2-scroll-text {
     display: block;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     font-size: 30px;
     color: dimgrey;
     margin-top: 20px;
 }
 .pg2-scroll-text2 {
     display: block;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     font-size: 30px;
     color: dimgrey;
     margin-right: 10px;
@@ -513,7 +510,7 @@ a.svg4:hover + .icon-text-4 {
 }
 .options {
     display: inline-block;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     font-size: 30px;
     color: dimgrey;
     background:;
@@ -638,7 +635,7 @@ a.svg4:hover + .icon-text-4 {
     padding-top: 10vh;
 }
 .speaker-img {
-    background-image: url(images/Echo%20X-ray.png);
+    background-image: url(/images/Echo%20X-ray.png);
     background-size: cover;
     display: inline-block;
     width: 400px;
@@ -656,7 +653,7 @@ a.svg4:hover + .icon-text-4 {
 
 .speaker-text-1 {
     position: relative;
-    font-family: 'Gabriel Sans Thin';
+    font-family: 'gabriel_sans_thinregular';
     font-size: 80px;
     font-weight: 500;
 }
@@ -664,7 +661,7 @@ a.svg4:hover + .icon-text-4 {
     position: relative;
     margin-top: 20px;
     position: relative;
-    font-family: 'Gabriel Sans';
+    font-family: 'gabriel_sans_boldregular';
     font-size: 25px;
     font-weight: bold;
 }
@@ -683,7 +680,7 @@ a.svg4:hover + .icon-text-4 {
 .speaker-info {
     position: relative;
     display: inline-block;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     font-size: 22.5px;
     text-align: center;
     width: 60vw;
@@ -692,7 +689,7 @@ a.svg4:hover + .icon-text-4 {
 
 .learn-dolby {
     display: block;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     font-size: 20px;
     color: #00caff;
     margin-top: 10px;
@@ -747,7 +744,7 @@ a.svg4:hover + .icon-text-4 {
     position: absolute;
     text-align: center;
     width: 300px;
-    font-family: "bookerly";
+    font-family: 'bookerlyitalic';
     font-size: 15px;
     color: dimgray;
     padding-top: 13px;
@@ -756,8 +753,8 @@ a.svg4:hover + .icon-text-4 {
     position: absolute;
     text-align: center;
     width: 300px;
-    font-family: "bookerly";
-    font-size: 15px;
+    font-family: 'bookerlyitalic';
+    font-size: 13px;
     color: dimgray;
     padding-top: 6px;
 }
@@ -814,7 +811,7 @@ a.svg4:hover + .icon-text-4 {
     margin-right: 100px;
 }
 .mic-image {
-    background-image: url(images/echo-top.png);
+    background-image: url(/images/echo-top.png);
     display: inline-block;
     background-size: cover;
     width: 400px;
@@ -823,14 +820,14 @@ a.svg4:hover + .icon-text-4 {
 .mic-text-1 {
     position: relative;
     display: block;
-    font-family: 'Gabriel Sans';
+    font-family: 'gabriel_sans_boldregular';
     font-size: 25px;
     font-weight: bold;
 }
 .mic-text-2 {
     position: relative;
     display: block;
-    font-family: 'Gabriel Sans Thin';
+    font-family: 'gabriel_sans_thinregular';
     font-size: 65px;
     font-weight: 500;
     margin-top: 20px;
@@ -854,7 +851,7 @@ a.svg4:hover + .icon-text-4 {
     position: relative;
     display: block;
     
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     font-size: 20px;
     color: #00caff;
     margin-top: 10px;
@@ -862,7 +859,7 @@ a.svg4:hover + .icon-text-4 {
 .mic-info {
     position: relative;
     display: inline-block;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     font-size: 22.5px;
     text-align: center;
     width: 35vw;
@@ -879,7 +876,7 @@ a.svg4:hover + .icon-text-4 {
 .echo-quote {
     position: relative;
     display: block;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     font-size: 50px;
     letter-spacing: 10px;
     width: 100vw;
@@ -914,14 +911,14 @@ a.svg4:hover + .icon-text-4 {
 .handsfree-text1 {
     position: relative;
     text-align: left;
-    font-family: 'Gabriel Sans Thin';
+    font-family: 'gabriel_sans_thinregular';
     font-size: 40px;
     font-weight: 500;
 }
 .handsfree-info {
     position: relative;
     display: inline-block;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     font-size: 22.5px;
     text-align: left;
     width: 35vw;
@@ -934,7 +931,7 @@ a.svg4:hover + .icon-text-4 {
 .learn-hands {
     display: block;
     text-align: center;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     font-size: 20px;
     color: #00caff;
     margin-top: 10px;
@@ -951,7 +948,7 @@ a.svg4:hover + .icon-text-4 {
     width: 100vw;
 }
 .voice-background {
-    background-image: url(images/Artboard%206-100.jpg);
+    background-image: url(/images/Artboard%206-100.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -959,7 +956,7 @@ a.svg4:hover + .icon-text-4 {
 .voice-text {
     position: relative;
     text-align: center;
-    font-family: 'Gabriel Sans Thin';
+    font-family: 'gabriel_sans_thinregular';
     font-size: 50px;
     font-weight: 500;
     padding-top: 5vh;
@@ -967,12 +964,13 @@ a.svg4:hover + .icon-text-4 {
 .voice-info {
     position: relative;
     display: inline-block;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     font-size: 22.5px;
     text-align: center;
     width: 36vw;
     margin-top: 3vh;
     word-spacing: 4.5px;
+    
 }
 .voice-info-wrap {
     width: 100vw;
@@ -980,7 +978,7 @@ a.svg4:hover + .icon-text-4 {
 }
 .voice-learn {
     text-align: center;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     font-size: 20px;
     color: #00caff;
     margin-top: 10px;
@@ -1004,7 +1002,7 @@ a.svg4:hover + .icon-text-4 {
         width: 100vw;
         height: 0px;
         background: white;
-        opacity: 0.95;
+        opacity: 0.98;
         transition: height .5s ease;
     }
     .hamburger-nav.active {
@@ -1059,7 +1057,7 @@ a.svg4:hover + .icon-text-4 {
         color: dimgrey;
         font-size: 30px;
         text-decoration: none;
-        font-family: 'Aaux Prolight';
+        font-family: 'aaux_prolightregular';
         transition: all .3s ease, border 0s ease;
         border-bottom: 3px solid dimgrey;
         padding-bottom: 10px;
@@ -1076,7 +1074,7 @@ a.svg4:hover + .icon-text-4 {
         color: dimgrey;
         font-size: 30px;
         text-decoration: none;
-        font-family: 'Aaux Prolight';
+        font-family: 'aaux_prolightregular';
         transition: all .3s ease, border 0s;
         border-bottom: 3px solid dimgrey;
         padding-bottom: 10px;
@@ -1114,7 +1112,7 @@ a.svg4:hover + .icon-text-4 {
 /* svg icons hover */
 
     a.ham-svg1 {
-        content: url(icons/Artboard3.svg); 
+        content: url(/icons/Artboard3.svg); 
         position: relative; 
         right: 0; 
         bottom: 0; 
@@ -1124,13 +1122,13 @@ a.svg4:hover + .icon-text-4 {
         display: block;
     }
     a.ham-svg1:hover {
-        content: url(icons/Artboard32.svg); 
+        content: url(/icons/Artboard32.svg); 
     }
     a.ham-svg1:hover + .icon-text-1 {
         visibility: visible;
     }
     a.ham-svg2 {
-        content: url(icons/Artboard4.svg); 
+        content: url(/icons/Artboard4.svg); 
         position: relative; 
         right: 0; 
         bottom: 0; 
@@ -1143,10 +1141,10 @@ a.svg4:hover + .icon-text-4 {
         visibility: visible;
     }
     a.ham-svg2:hover {
-        content: url(icons/Artboard42.svg); 
+        content: url(/icons/Artboard42.svg); 
     }
     a.ham-svg3 {
-        content: url(icons/Artboard5.svg); 
+        content: url(/icons/Artboard5.svg); 
         position: relative;  
         right: 0; 
         bottom: 0; 
@@ -1155,13 +1153,13 @@ a.svg4:hover + .icon-text-4 {
         height: 100px;
     }
     a.ham-svg3:hover {
-        content: url(icons/Artboard52.svg); 
+        content: url(/icons/Artboard52.svg); 
     }
     a.ham-svg3:hover + .icon-text-3 {
         visibility: visible;
     }
     a.ham-svg4 {
-        content: url(icons/Artboard6.svg); 
+        content: url(/icons/Artboard6.svg); 
         position: relative;  
         right: 0; 
         bottom: 0; 
@@ -1170,7 +1168,7 @@ a.svg4:hover + .icon-text-4 {
         height: 100px;
     }
     a.ham-svg4:hover {
-        content: url(icons/Artboard62.svg); 
+        content: url(/icons/Artboard62.svg); 
     }
     a.ham-svg4:hover + .icon-text-4 {
         visibility: visible;

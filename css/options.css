@@ -1,4 +1,7 @@
-
+body {
+    padding: 0;
+    margin: 0;
+}
 .nav {
     position: fixed;
     display: block;
@@ -9,7 +12,7 @@
     width: 100%;
     height: 40px;
     background: #232f3e;
-    z-index: 101;
+    z-index: 10000;
 }
 
 .button-wrap {
@@ -38,7 +41,7 @@
     color: white;
     font-size: 20px;
     text-decoration: none;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     transition: all .3s ease;
     cursor: pointer;
 }
@@ -51,7 +54,7 @@
     color: white;
     font-size: 20px;
     text-decoration: none;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     transition: all .5s ease;
 }
 .alexa {
@@ -63,7 +66,7 @@
     color: white;
     font-size: 20px;
     text-decoration: none;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     transition: all .3s ease;
 }
 .alexa span:after {
@@ -139,7 +142,7 @@
     opacity: .95;
     transition: height .5s ease;
     text-align: center;
-    z-index: 10;
+    z-index: 1000;
 }
 
 /* svg icons hover */
@@ -231,7 +234,7 @@ a.svg4:hover + .icon-text-4 {
     display: block;
     position: relative;
     font-size: 18px;
-    font-family: 'Amazon Ember';
+    font-family: 'amazon_emberregular';
     color: #00caff;
     visibility: hidden;
     top: -5px;
@@ -306,32 +309,269 @@ a.svg4:hover + .icon-text-4 {
     height: 95vh;
     left: 0;
 }
-.charcoal-img {
+.img {
     position: absolute;
-    bottom: 10px;
+    bottom: 100px;
     width: 300px;
     z-index: 1000;
-    left: 40vw;
+    left: 20vw;
+    transition: all 1s ease;
 }
-.charcoal {
+.big {
     position: absolute;
     bottom:0;
     display: inline-block;
     width: 100vw;
     height: 100vh;
-    background-color: #1a191e;
     left: 0;
+    transition: all 1s ease;
+}
+.charcoal {
+    background-color: #1a191e;
 }
 
 .charcoal-s {
     position: absolute;
     display: inline-block;
-    width: 100vh;
-    height: 50vh;
+    width: 100vw;
+    height: 40vh;
     background-color: #131217 ;
-    border-top-right-radius: 50vh;
-    border-top-left-radius: 50vh;
     bottom: 0;
-    left: 25vw;
+    left: 0;
+    transition: all 1.2s ease;
+}
+
+.sandstone {
+    background-color: #cecece;
+}
+
+.sandstone-s {
+    position: absolute;
+    display: inline-block;
+    width: 0vw;
+    height: 40vh;
+    background-color: #c1c1c1;
+    bottom: 0;
+    left: 0;
+    transition: all 1.2s ease;
+    z-index: 1;
+}
+
+
+.heather {
+    background-color: #b2b1b1;
+}
+
+.heather-s {
+    position: absolute;
+    display: inline-block;
+    width: 0vw;
+    height: 40vh;
+    background-color: #999898;
+    bottom: 0;
+    left: 0;
+    transition: all 1.2s ease;
+    z-index: 1;
+}
+
+.silver {
+    background-color: #e0deda;
+}
+
+.silver-s {
+    position: absolute;
+    display: inline-block;
+    width: 0vw;
+    height: 40vh;
+    background-color: #777674;
+    bottom: 0;
+    left: 0;
+    transition: all 1.2s ease;
+    z-index: 1;
+}
+
+.walnut {
+    background-color: #775742;
+}
+
+.walnut-s {
+    position: absolute;
+    display: inline-block;
+    width: 0vw;
+    height: 40vh;
+    background-color: #3d332c;
+    bottom: 0;
+    left: 0;
+    transition: all 1.2s ease;
+    z-index: 1;
+}
+
+.oak {
+    background-color: #efdecb;
+}
+
+.oak-s {
+    position: absolute;
+    display: inline-block;
+    width: 100vw;
+    height: 40vh;
+    background-color: #d6bea5;
+    bottom: 0;
+    left: 0;
+    transition: all 1.2s ease;
     z-index: 10;
+}
+.color-button-wrap {
+    position: absolute;
+    width: 100vw;
+    max-width: 100%;
+    text-align: center;
+    bottom: 20px;
+    z-index: 1000;
+}
+.button { 
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin-left: 10px;
+}
+
+
+.button:hover {
+    transform: scale(1.2)
+}
+.charcoal-button {
+    background-image: url(/images/charcoal_color.png);
+    background-size: cover;
+}
+.sandstone-button {
+    background-image: url(/images/sandstone_color.png);
+    background-size: cover;
+}
+.heather-button {
+    background-image: url(/images/heather_color.png);
+    background-size: cover;
+}
+.silver-button {
+    background-image: url(/images/silver_color.png);
+    background-size: cover;
+}
+
+.walnut-button {
+    background-image: url(/images/walnut_color.png);
+    background-size: cover;
+}
+.oak-button {
+    background-image: url(/images/oak_color.png);
+    background-size: cover;
+}
+.style-wrap {
+    position: absolute;
+    top: 100px;
+}
+.style-text {
+    position: relative;
+    font-family: 'amazon_emberregular';
+    font-size: 80px;
+    width: 600px;
+    left: 50vw;
+    color: #00caff;
+    transition: all 1s ease;
+}
+.color-text {
+    position: absolute;
+    font-family: 'amazon_emberregular';
+    font-size: 50px;
+    width: 600px;
+    left: 50vw;
+}
+.oakt {
+    opacity: 1;
+    transition: all 1s ease;
+    color: Rosybrown;
+}
+.charc {
+    opacity: 0;
+    transition: all 1s ease;
+    color: slategrey;
+}
+.sand {
+    opacity: 0;
+    transition: all 1s ease;
+    color: azure;
+}
+.heath {
+    opacity: 0;
+    transition: all 1s ease;
+    color: gainsboro;
+}
+.silv {
+    opacity: 0;
+    transition: all 1s ease;
+    color: silver;
+}
+.wal {
+    opacity: 0;
+    transition: all 1s ease;
+    color: floralwhite;
+}
+.price-text {
+    position: absolute;
+    font-family: 'aaux_prolightregular';
+    font-size: 40px;
+    left: 50vw;
+    padding-top: 100px;
+    transition: all 1s ease;
+}
+.cart {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    font-family: 'aaux_prolightregular';
+    font-size: 20px;
+    color: dimgrey;
+    background:;
+    width: 120px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 5px;
+    border: 1.5px solid dimgrey;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    left: 59vw;
+    top: 212px;
+}
+.cart span:after {
+      content: '\00bb';
+      position: relative;
+      opacity: 0;
+      top: 0;
+      right: 0px;
+      transition: 0.3s ease;
+    }
+.cart:hover span:after {
+      opacity: 1;
+      right: -5px;
+      color: white;
+}
+.cart:hover span {
+    padding-left: 4px;
+    color: white;
+    transition: 0.3s ease;
+}
+.cart:hover {
+    background: #00caff;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.revealOnScroll {
+    opacity: 0;
 }
