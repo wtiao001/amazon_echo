@@ -986,6 +986,125 @@ a.svg4:hover + .icon-text-4 {
     color: #00caff;
     margin-top: 10px;
 }
+.voice-interaction {
+    position: relative;
+    width: 100vw;
+    height: 100px;
+    top: 100px;
+}
+.inter-1 {
+    position: absolute;
+    left: 53vw;
+    top: 100px;
+    
+    text-align: center;
+}
+.inter-icon2 {
+    display: inline-block;
+    background-image:url(../images/temperature.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+}
+.inter-circle {
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: black;
+    border-radius: 50%;
+    bottom: 0;
+    left: 81px;
+}
+.inter-line {
+    position: relative;
+    display: inline-block;
+    width: 2px;
+    height: 50px;
+    background: black;
+}
+.inter-text {
+    position: relative;
+    width: 150px;
+    padding: 10px;
+    font-family: 'bookerlyitalic';
+}
+.inter-2 {
+    position: absolute;
+    left: 32vw;
+    top: 20px;
+    
+    text-align: center;
+}
+.inter-icon {
+    display: inline-block;
+    background-image:url(../images/FireTV.png);
+    width: 57px;
+    height: 30px;
+    background-size: contain;
+    margin-bottom: 10px;
+    
+}
+.inter-circle {
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: black;
+    border-radius: 50%;
+    bottom: 0;
+    left: 81px;
+}
+.inter-line {
+    position: relative;
+    display: inline-block;
+    width: 2px;
+    height: 50px;
+    background: black;
+}
+.inter-text {
+    position: relative;
+    width: 150px;
+    padding: 10px;
+    font-family: 'bookerlyitalic';
+}
+.inter-3 {
+    position: absolute;
+    left: 65vw;
+    top: -40px;
+    
+    text-align: center;
+}
+.inter-icon3 {
+    display: inline-block;
+    background-image:url(../images/lightbulb.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+}
+.inter-circle1 {
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: black;
+    border-radius: 50%;
+    bottom: 0;
+    left: 85.5px;
+}
+.inter-line {
+    position: relative;
+    display: inline-block;
+    width: 2px;
+    height: 50px;
+    background: black;
+}
+.inter-text2 {
+    position: relative;
+    width: 160px;
+    padding: 10px;
+    font-family: 'bookerlyitalic';
+}
 @media screen and (max-width: 800px) {
     .logo {
         margin-left: 20px;
