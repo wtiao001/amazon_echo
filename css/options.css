@@ -148,7 +148,7 @@ body {
 /* svg icons hover */
 
 a.svg1 {
-    content: url(icons/Artboard3.svg); 
+    content: url(/icons/Artboard3.svg); 
     position: relative; 
     top: -100px; 
     right: 0; 
@@ -159,13 +159,13 @@ a.svg1 {
     display: block;
 }
 a.svg1:hover {
-    content: url(icons/Artboard32.svg); 
+    content: url(/icons/Artboard32.svg); 
 }
 a.svg1:hover + .icon-text-1 {
     visibility: visible;
 }
 a.svg2 {
-    content: url(icons/Artboard4.svg); 
+    content: url(/icons/Artboard4.svg); 
     position: relative; 
     top: -100px; 
     right: 0; 
@@ -179,10 +179,10 @@ a.svg2:hover + .icon-text-2 {
     visibility: visible;
 }
 a.svg2:hover {
-    content: url(icons/Artboard42.svg); 
+    content: url(/icons/Artboard42.svg); 
 }
 a.svg3 {
-    content: url(/icons/Artboard5.svg); 
+    content: url(//icons/Artboard5.svg); 
     position: relative; 
     top: -100px; 
     right: 0; 
@@ -192,13 +192,13 @@ a.svg3 {
     height: 100px;
 }
 a.svg3:hover {
-    content: url(icons/Artboard52.svg); 
+    content: url(/icons/Artboard52.svg); 
 }
 a.svg3:hover + .icon-text-3 {
     visibility: visible;
 }
 a.svg4 {
-    content: url(icons/Artboard6.svg); 
+    content: url(/icons/Artboard6.svg); 
     position: relative; 
     top: -100px; 
     right: 0; 
@@ -208,7 +208,7 @@ a.svg4 {
     height: 100px;
 }
 a.svg4:hover {
-    content: url(icons/Artboard62.svg); 
+    content: url(/icons/Artboard62.svg); 
 }
 a.svg4:hover + .icon-text-4 {
     visibility: visible;
@@ -446,28 +446,28 @@ a.svg4:hover + .icon-text-4 {
     transform: scale(1.2)
 }
 .charcoal-button {
-    background-image: url(images/charcoal_color.png);
+    background-image: url(/images/charcoal_color.png);
     background-size: cover;
 }
 .sandstone-button {
-    background-image: url(images/sandstone_color.png);
+    background-image: url(/images/sandstone_color.png);
     background-size: cover;
 }
 .heather-button {
-    background-image: url(images/heather_color.png);
+    background-image: url(/images/heather_color.png);
     background-size: cover;
 }
 .silver-button {
-    background-image: url(images/silver_color.png);
+    background-image: url(/images/silver_color.png);
     background-size: cover;
 }
 
 .walnut-button {
-    background-image: url(images/walnut_color.png);
+    background-image: url(/images/walnut_color.png);
     background-size: cover;
 }
 .oak-button {
-    background-image: url(images/oak_color.png);
+    background-image: url(/images/oak_color.png);
     background-size: cover;
 }
 .style-wrap {
