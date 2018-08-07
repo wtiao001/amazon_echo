@@ -4,6 +4,9 @@ body {
     background: #efece9;
     overflow-x: hidden;
 }
+#dog {
+    display: none;
+}
 #intro-gif {
     position: absolute;
     background-image: url(../images/alexa_logo_white.gif);

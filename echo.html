@@ -198,10 +198,13 @@
         
         setTimeout(function(){
             $('#intro-gif').css({"opacity":"0"});
-        },1500);
+        },2500);
         setTimeout(function(){
             $('#intro-gif').css({"display":"none"});
-        },1800); 
+        },3000); 
+        setTimeout(function(){
+            $('#dog').css({"display":"block"});
+        },2000); 
         
         var gifSource = $('#intro-gif').attr('src');
         $('#intro-gif').attr('src', "");    
