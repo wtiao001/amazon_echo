@@ -4,6 +4,9 @@ body {
     background: #efece9;
     overflow-x: hidden;
 }
+@font-face {
+    
+}
 #intro-gif {
     position: absolute;
     background-image: url(images/alexa_logo_white.gif);
@@ -91,7 +94,7 @@ body {
     color: white;
     font-size: 20px;
     text-decoration: none;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     transition: all .3s ease;
     cursor: pointer;
 }
@@ -104,7 +107,7 @@ body {
     color: white;
     font-size: 20px;
     text-decoration: none;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     transition: all .5s ease;
 }
 .alexa {
@@ -116,7 +119,7 @@ body {
     color: white;
     font-size: 20px;
     text-decoration: none;
-    font-family: 'Aaux Prolight';
+    font-family: 'aaux_prolightregular';
     transition: all .3s ease;
 }
 .alexa span:after {

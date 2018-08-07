@@ -303,15 +303,15 @@ a.svg4:hover + .icon-text-4 {
     text-align: center;
     width: 100vw;
     max-width: 100%;
-    height: 90vh;
+    height: 95vh;
     left: 0;
-    border: solid red;
 }
 .charcoal-img {
     position: absolute;
-    bottom: 50px;
+    bottom: 10px;
     width: 300px;
     z-index: 1000;
+    left: 40vw;
 }
 .charcoal {
     position: absolute;
