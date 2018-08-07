@@ -6,7 +6,7 @@ body {
 }
 #intro-gif {
     position: absolute;
-    background-image: url(/images/alexa_logo_white.gif);
+    background-image: url(../images/alexa_logo_white.gif);
     background-size: cover;
     background-position: center;
     height: 110%;
@@ -198,7 +198,7 @@ body {
 /* svg icons hover */
 
 a.svg1 {
-    content: url(/icons/Artboard3.svg); 
+    content: url(../icons/Artboard3.svg); 
     position: relative; 
     top: -100px; 
     right: 0; 
@@ -209,13 +209,13 @@ a.svg1 {
     display: block;
 }
 a.svg1:hover {
-    content: url(/icons/Artboard32.svg); 
+    content: url(../icons/Artboard32.svg); 
 }
 a.svg1:hover + .icon-text-1 {
     visibility: visible;
 }
 a.svg2 {
-    content: url(/icons/Artboard4.svg); 
+    content: url(../icons/Artboard4.svg); 
     position: relative; 
     top: -100px; 
     right: 0; 
@@ -229,10 +229,10 @@ a.svg2:hover + .icon-text-2 {
     visibility: visible;
 }
 a.svg2:hover {
-    content: url(/icons/Artboard42.svg); 
+    content: url(../icons/Artboard42.svg); 
 }
 a.svg3 {
-    content: url(/icons/Artboard5.svg); 
+    content: url(../icons/Artboard5.svg); 
     position: relative; 
     top: -100px; 
     right: 0; 
@@ -242,13 +242,13 @@ a.svg3 {
     height: 100px;
 }
 a.svg3:hover {
-    content: url(/icons/Artboard52.svg); 
+    content: url(../icons/Artboard52.svg); 
 }
 a.svg3:hover + .icon-text-3 {
     visibility: visible;
 }
 a.svg4 {
-    content: url(/icons/Artboard6.svg); 
+    content: url(../icons/Artboard6.svg); 
     position: relative; 
     top: -100px; 
     right: 0; 
@@ -258,7 +258,7 @@ a.svg4 {
     height: 100px;
 }
 a.svg4:hover {
-    content: url(/icons/Artboard62.svg); 
+    content: url(../icons/Artboard62.svg); 
 }
 a.svg4:hover + .icon-text-4 {
     visibility: visible;
@@ -312,7 +312,7 @@ a.svg4:hover + .icon-text-4 {
     width: 100vw;
     height: 100vh;
     max-width: 100%;
-    background-image: url(/images/dog.jpg);
+    background-image: url(../images/dog.jpg);
     background-position: 80% 50%;
     background-size: cover;
 }
@@ -355,7 +355,7 @@ a.svg4:hover + .icon-text-4 {
     width: 100vw;
     height: 100vh;
     max-width: 100%;
-    background-image: url(/images/Artboard%204-100.jpg);
+    background-image: url(../images/Artboard%204-100.jpg);
     background-position: 80% 50%;
     background-size: cover;
 }
@@ -635,7 +635,7 @@ a.svg4:hover + .icon-text-4 {
     padding-top: 10vh;
 }
 .speaker-img {
-    background-image: url(/images/Echo%20X-ray.png);
+    background-image: url(../images/Echo%20X-ray.png);
     background-size: cover;
     display: inline-block;
     width: 400px;
@@ -811,7 +811,7 @@ a.svg4:hover + .icon-text-4 {
     margin-right: 100px;
 }
 .mic-image {
-    background-image: url(/images/echo-top.png);
+    background-image: url(../images/echo-top.png);
     display: inline-block;
     background-size: cover;
     width: 400px;
@@ -948,7 +948,7 @@ a.svg4:hover + .icon-text-4 {
     width: 100vw;
 }
 .voice-background {
-    background-image: url(/images/Artboard%206-100.jpg);
+    background-image: url(../images/Artboard%206-100.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -1112,7 +1112,7 @@ a.svg4:hover + .icon-text-4 {
 /* svg icons hover */
 
     a.ham-svg1 {
-        content: url(/icons/Artboard3.svg); 
+        content: url(../icons/Artboard3.svg); 
         position: relative; 
         right: 0; 
         bottom: 0; 
@@ -1122,13 +1122,13 @@ a.svg4:hover + .icon-text-4 {
         display: block;
     }
     a.ham-svg1:hover {
-        content: url(/icons/Artboard32.svg); 
+        content: url(../icons/Artboard32.svg); 
     }
     a.ham-svg1:hover + .icon-text-1 {
         visibility: visible;
     }
     a.ham-svg2 {
-        content: url(/icons/Artboard4.svg); 
+        content: url(../icons/Artboard4.svg); 
         position: relative; 
         right: 0; 
         bottom: 0; 
@@ -1141,10 +1141,10 @@ a.svg4:hover + .icon-text-4 {
         visibility: visible;
     }
     a.ham-svg2:hover {
-        content: url(/icons/Artboard42.svg); 
+        content: url(../icons/Artboard42.svg); 
     }
     a.ham-svg3 {
-        content: url(/icons/Artboard5.svg); 
+        content: url(../icons/Artboard5.svg); 
         position: relative;  
         right: 0; 
         bottom: 0; 
@@ -1153,13 +1153,13 @@ a.svg4:hover + .icon-text-4 {
         height: 100px;
     }
     a.ham-svg3:hover {
-        content: url(/icons/Artboard52.svg); 
+        content: url(../icons/Artboard52.svg); 
     }
     a.ham-svg3:hover + .icon-text-3 {
         visibility: visible;
     }
     a.ham-svg4 {
-        content: url(/icons/Artboard6.svg); 
+        content: url(../icons/Artboard6.svg); 
         position: relative;  
         right: 0; 
         bottom: 0; 
@@ -1168,7 +1168,7 @@ a.svg4:hover + .icon-text-4 {
         height: 100px;
     }
     a.ham-svg4:hover {
-        content: url(/icons/Artboard62.svg); 
+        content: url(../icons/Artboard62.svg); 
     }
     a.ham-svg4:hover + .icon-text-4 {
         visibility: visible;

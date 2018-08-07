@@ -52,7 +52,7 @@ body {
 
 .echoimg {
     position: absolute;
-    background-image: url('https://wtiao001.github.io/amazon_echo/css/images/Artboard%207-100.jpg');
+    background-image: url(../images/Artboard%206-100.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
