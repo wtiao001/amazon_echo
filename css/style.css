@@ -867,6 +867,7 @@ a.svg4:hover + .icon-text-4 {
     text-align: center;
     width: 35vw;
     padding-top: 3vh; 
+    left: -60px;
 }
 .mic-bubble-wrap {
     position: relative;
@@ -991,6 +992,7 @@ a.svg4:hover + .icon-text-4 {
     width: 100vw;
     height: 100px;
     top: 100px;
+    z-index: 1000;
 }
 .inter-1 {
     position: absolute;
