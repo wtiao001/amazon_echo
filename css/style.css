@@ -861,13 +861,14 @@ a.svg4:hover + .icon-text-4 {
 }
 .mic-info {
     position: relative;
+	left: -60px;
     display: inline-block;
     font-family: 'aaux_prolightregular';
     font-size: 22.5px;
     text-align: center;
     width: 35vw;
     padding-top: 3vh; 
-    left: -60px;
+    
 }
 .mic-bubble-wrap {
     position: relative;
